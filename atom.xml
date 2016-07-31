@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-31T10:04:58.000Z</updated>
+  <updated>2016-07-31T10:16:58.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,24 +20,21 @@
     <link href="http://yoursite.com/2016/07/30/hello-world/"/>
     <id>http://yoursite.com/2016/07/30/hello-world/</id>
     <published>2016-07-30T13:44:57.000Z</published>
-    <updated>2016-07-31T10:04:58.000Z</updated>
+    <updated>2016-07-31T10:16:58.000Z</updated>
     
-    <content type="html"><![CDATA[<p><br></p>
-<p></p><p>讲真，好嫌弃这个主题的代码高亮，起码给我一个courier new字体啊…</p><p></p>
+    <content type="html"><![CDATA[<p></p><p>讲真，好嫌弃这个主题的代码高亮，起码给我一个courier new字体啊…</p><p></p>
 <p></p><p>奈何其他主题大大小小缺陷更多🙄️</p><p></p>
 <p></p><p>强迫症患者早晚会自己捣鼓一个满意的主题出来的（奇怪的flag🙊）</p><p></p>
 <p></p><p>所以拖延症患者的早晚到底是多晚呢，微笑脸：）</p><p></p>
-<p></p><p>whatever，折腾了这么好几天终于步入正轨了，hello world～</p><br><br><p></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">" Hello World "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">" Coding Life "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p></p><p>whatever，折腾了这么好几天终于步入正轨了，hello world～</p><br><br><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">" Hello World "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">" Coding Life "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p></p>
 <p><br></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;p&gt;讲真，好嫌弃这个主题的代码高亮，起码给我一个courier new字体啊…&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;/p&gt;&lt;p&gt;讲真，好嫌弃这个主题的代码高亮，起码给我一个courier new字体啊…&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;p&gt;奈何其他主题大大小小缺陷更多🙄️&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;p&gt;强迫症患者早晚会自己捣鼓一个满意的主题出
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;强迫症患者早晚会自己捣鼓一个满意的主题出来的（奇怪的flag🙊
     
     </summary>
     
