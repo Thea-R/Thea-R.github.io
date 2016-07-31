@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://thea-r.github.io/"/>
   <updated>2016-07-31T10:44:53.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://thea-r.github.io/</id>
   
   <author>
     <name>Thea-R</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/07/30/hello-world/"/>
-    <id>http://yoursite.com/2016/07/30/hello-world/</id>
+    <link href="http://thea-r.github.io/2016/07/30/hello-world/"/>
+    <id>http://thea-r.github.io/2016/07/30/hello-world/</id>
     <published>2016-07-30T13:44:57.000Z</published>
     <updated>2016-07-31T10:44:53.000Z</updated>
     
