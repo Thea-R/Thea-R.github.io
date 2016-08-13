@@ -1,28 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>然而，然而</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
   
-  <link href="/atom.xml" rel="self"/>
+  <title>HDU5828 Rikka with Sequence | 然而，然而</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="2016 Multi-University Training Contest 8">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HDU5828 Rikka with Sequence">
+<meta property="og:url" content="http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/index.html">
+<meta property="og:site_name" content="然而，然而">
+<meta property="og:description" content="2016 Multi-University Training Contest 8">
+<meta property="og:updated_time" content="2016-08-13T15:17:19.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HDU5828 Rikka with Sequence">
+<meta name="twitter:description" content="2016 Multi-University Training Contest 8">
   
-  <link href="http://thea-r.github.io/"/>
-  <updated>2016-08-13T15:17:19.000Z</updated>
-  <id>http://thea-r.github.io/</id>
   
-  <author>
-    <name>Thea-R</name>
-    
-  </author>
+    <link rel="icon" href="/favicon.png">
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
-  <entry>
-    <title>HDU5828 Rikka with Sequence</title>
-    <link href="http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/"/>
-    <id>http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/</id>
-    <published>2016-08-13T14:46:36.000Z</published>
-    <updated>2016-08-13T15:17:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　2016 Multi-University Training Contest 8<br><a id="more"></a>  </p>
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">然而，然而</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a href="/atom.xml">Rss</a></li><li><a href="/sitemap.xml">Sitemap</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://thea-r.github.io"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-HDU5828-Rikka-with-Sequence" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2016/08/13/HDU5828-Rikka-with-Sequence/" class="article-date">
+  <time datetime="2016-08-13T14:46:36.000Z" itemprop="datePublished">2016-08-13</time>
+</a>
+		</span>
+		<span class="meta-elements author">Thea-R</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      HDU5828 Rikka with Sequence
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>　　2016 Multi-University Training Contest 8<br><a id="more"></a>  </p>
 <p>　　大意：n元素序列，给定m种操作：区间加法，区间开方，区间求和。 <a href="http://acm.hdu.edu.cn/showproblem.php?pid=5828" target="_blank" rel="external">-原题链接</a>  </p>
 <p>　　很显然的线段树，但是普通思路也很显然会T。<br>　　赛时一直在纠结线段树应该维护什么东西，若维护操作序列，那只能朴素求和；若维护区间和，那sqrt要落实到所有叶子结点，代价太大。  </p>
 <p>　　后来学习了官方题解和网上的博客，其实主要性质是，开方操作使元素减小非常快，不断开方后区间内元素最终会趋近相同，于是可以用到以下两种优化：  </p>
@@ -39,37 +85,68 @@
 <p><br></p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div></pre></td><td class="code"><pre><div class="line">#include&lt;iostream&gt;</div><div class="line">#include&lt;cstring&gt;</div><div class="line">#include&lt;cstdlib&gt;</div><div class="line">#include&lt;cstdio&gt;</div><div class="line">#include&lt;cmath&gt;</div><div class="line">#include&lt;algorithm&gt;</div><div class="line">#define kl (k&lt;&lt;1)</div><div class="line">#define kr ((k&lt;&lt;1)+1)</div><div class="line">#define mid ((l+r)&gt;&gt;1)</div><div class="line">using namespace std;</div><div class="line">typedef long long lint;</div><div class="line">const int maxn=1e5 + 10;</div><div class="line">int T, n, m;</div><div class="line">struct node</div><div class="line">&#123;</div><div class="line">	lint mn, mx, sum, tmp;</div><div class="line">	node(lint _mn=0, lint _mx=0, lint s=0, lint t=0) &#123; mn=_mn, mx=_mx, sum=s, tmp=t; &#125;</div><div class="line">&#125;tr[maxn&lt;&lt;2];</div><div class="line">void Get_lint(lint &amp;num, char c=0)</div><div class="line">&#123;</div><div class="line">	for(c=getchar(); c&lt;'0'||c&gt;'9'; c=getchar());</div><div class="line">	for(num=c-48; c=getchar(), c&gt;='0'&amp;&amp;c&lt;='9'; num=num*10+c-48);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">void Build(int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	tr[k].mn=tr[k].mx=tr[k].sum=tr[k].tmp=0;</div><div class="line">	if(l==r)	return ;</div><div class="line">	Build(kl, l, mid);</div><div class="line">	Build(kr, mid+1, r);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">void Push_down(int k, int l, int r)</div><div class="line">&#123;</div><div class="line">	tr[kl].mn+=tr[k].tmp, tr[kl].mx+=tr[k].tmp, tr[kl].sum+=(mid-l+1)*tr[k].tmp, tr[kl].tmp+=tr[k].tmp;</div><div class="line">	tr[kr].mn+=tr[k].tmp, tr[kr].mx+=tr[k].tmp, tr[kr].sum+=(r-mid)*tr[k].tmp, tr[kr].tmp+=tr[k].tmp;</div><div class="line">	tr[k].tmp=0;</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">void Push_up(int k, int l, int r)</div><div class="line">&#123;</div><div class="line">	tr[k].mn=min(tr[kl].mn, tr[kr].mn);</div><div class="line">	tr[k].mx=max(tr[kl].mx, tr[kr].mx);</div><div class="line">	tr[k].sum=tr[kl].sum+tr[kr].sum;</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">void Insert(int ll, int rr, lint x, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr &lt;l||r&lt; ll)	return ;</div><div class="line">	if(ll&lt;=l&amp;&amp;r&lt;=rr)</div><div class="line">	&#123;</div><div class="line">		tr[k].mn+=x, tr[k].mx+=x, tr[k].sum+=(r-l+1)*x, tr[k].tmp+=x;</div><div class="line">		return ;</div><div class="line">	&#125;</div><div class="line">	if(tr[k].tmp)	Push_down(k, l, r);</div><div class="line">	Insert(ll, rr, x, kl, l, mid);</div><div class="line">	Insert(ll, rr, x, kr, mid+1, r);</div><div class="line">	Push_up(k, l, r);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">void Modify(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr &lt;l||r&lt; ll)	return ;</div><div class="line">	if(ll&lt;=l&amp;&amp;r&lt;=rr)</div><div class="line">	&#123;</div><div class="line">		if(tr[k].mn==tr[k].mx)</div><div class="line">		&#123;</div><div class="line">			lint tmp=sqrt(tr[k].mn);</div><div class="line">			tr[k].tmp+=tmp-tr[k].mn, tr[k].sum=(r-l+1)*tmp, tr[k].mn=tr[k].mx=tmp;</div><div class="line">			return ;</div><div class="line">		&#125;</div><div class="line">		else if(tr[k].mn+1==tr[k].mx)</div><div class="line">		&#123;</div><div class="line">			lint tp1=sqrt(tr[k].mn), tp2=sqrt(tr[k].mx);</div><div class="line">			if(tp1+1==tp2)</div><div class="line">			&#123;</div><div class="line">				tr[k].tmp+=tp1-tr[k].mn, tr[k].sum+=(r-l+1)*(tp1-tr[k].mn), tr[k].mn=tp1, tr[k].mx=tp2;</div><div class="line">				return ;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	if(tr[k].tmp)	Push_down(k, l, r);</div><div class="line">	Modify(ll, rr, kl, l, mid);</div><div class="line">	Modify(ll, rr, kr, mid+1, r);</div><div class="line">	Push_up(k, l, r);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">lint Query(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr &lt;l||r&lt; ll)	return 0;</div><div class="line">	if(ll&lt;=l&amp;&amp;r&lt;=rr)	return tr[k].sum;</div><div class="line">	if(tr[k].tmp)	Push_down(k, l, r);</div><div class="line">	return Query(ll, rr, kl, l, mid)+Query(ll, rr, kr, mid+1, r);</div><div class="line">&#125;</div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">	scanf("%d", &amp;T);</div><div class="line">	while(T--)</div><div class="line">	&#123;</div><div class="line">		scanf("%d%d", &amp;n, &amp;m);</div><div class="line">		Build();</div><div class="line">		lint d, l, r, x;</div><div class="line">		for(int i=1; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			Get_lint(x);</div><div class="line">			Insert(i, i, x);</div><div class="line">		&#125;</div><div class="line">		for(int i=1; i&lt;=m; i++)</div><div class="line">		&#123;</div><div class="line">			Get_lint(d), Get_lint(l), Get_lint(r);</div><div class="line">			if(d==1)</div><div class="line">			&#123;</div><div class="line">				Get_lint(x);</div><div class="line">				Insert(l, r, x);</div><div class="line">			&#125;</div><div class="line">			else if(d==2)	Modify(l, r);</div><div class="line">			else printf("%lld\n", Query(l, r));</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><br></p>
-]]></content>
+
     
-    <summary type="html">
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
     
-      &lt;p&gt;　　2016 Multi-University Training Contest 8&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
+<nav id="article-nav">
   
-  <entry>
-    <title>Hello World</title>
-    <link href="http://thea-r.github.io/2016/08/13/Hello-World/"/>
-    <id>http://thea-r.github.io/2016/08/13/Hello-World/</id>
-    <published>2016-08-13T13:23:49.000Z</published>
-    <updated>2016-08-13T15:10:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　第一篇文，你以为会有摘要？<br><a id="more"></a>  </p>
-<p>　　讲真，好嫌弃这个代码高亮，起码给我一个courier new啊😕<br>　　奈何其他主题大大小小缺陷更多，手动再见🙄️<br>　　强迫症患者早晚会自己捣鼓一个满意的主题出来的，奇怪的flag🙊<br>　　所以拖延症患者的早晚到底是多晚呢：）<br>　　whatever，折腾这么久终于步入正轨了，Hello World~<br><br></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">" Hello World "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">" Coding Life "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><br></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　第一篇文，你以为会有摘要？&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
-</feed>
+    <a href="/2016/08/13/Hello-World/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:thea-r.github.io">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">然而，然而</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2016 Thea-R<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
