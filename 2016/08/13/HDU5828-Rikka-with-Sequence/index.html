@@ -16,7 +16,7 @@
 
   
   
-  <meta name="keywords" content="">
+  <meta name="keywords" content="2016多校,线段树">
   
 
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -55,6 +55,12 @@
       
         <li><a href="/archives">Archives</a></li>
       
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
     </ul>
   </nav>
 </header>
@@ -84,7 +90,7 @@
   <div class="article-content">
     <div class="entry">
       
-        <p>　　2016 Multi-University Training Contest 8  </p>
+        <script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 8  </p>
 <p>　　题意：n元素序列，给定m种操作——区间加法，区间开方，区间求和。对于每个求和操作，输出结果。  <a href="http://acm.hdu.edu.cn/showproblem.php?pid=5828" target="_blank" rel="external">-原题链接</a><br><a id="more"></a>  </p>
 <p>　　很显然的线段树，然而直接思路也很显然会T。<br>　　赛时一直在纠结线段树应该维护什么东西，若维护操作序列，那只能朴素求和；若维护区间和，那sqrt要落实到所有叶子结点，代价太大。  </p>
 <p>　　后来学习了官方题解和网上的博客，其实主要性质是，开方操作使元素减小非常快，不断开方后区间内元素最终会趋近相同，于是可以用到以下两种优化：</p>
@@ -110,6 +116,13 @@
     
 
     
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/2016多校/">2016多校</a><a href="/tags/线段树/">线段树</a>
+    </span>
+    
 
     </div>
 
@@ -118,6 +131,28 @@
 </article>
 
   
+	<div id="comment">
+	
+	
+	<!-- 多说评论框 start -->
+	 <div class="ds-thread" data-thread-key="/2016/08/13/HDU5828-Rikka-with-Sequence/" data-title="HDU5828 Rikka with Sequence" data-url="http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"thea-r"};
+	  (function() {
+	    var ds = document.createElement('script');
+	    ds.type = 'text/javascript';ds.async = true;
+	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	    ds.charset = 'UTF-8';
+	    (document.getElementsByTagName('head')[0] 
+	     || document.getElementsByTagName('body')[0]).appendChild(ds);
+	  })();
+	  </script>
+	<!-- 多说公共JS代码 end -->
+	
+	</div>
+
 
 
 
