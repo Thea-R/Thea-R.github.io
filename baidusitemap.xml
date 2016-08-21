@@ -4,18 +4,41 @@
 
     
   <url>
-    <loc>http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/</loc>
-    <lastmod>2016-08-19T08:37:43.000Z</lastmod>
+    <loc>http://thea-r.github.io/2016/08/20/HDU5835-Danganronpa/</loc>
+    <lastmod>2016-08-21T07:15:28.000Z</lastmod>
     <data>
         <display>
-        <title>HDU5862 Counting Intersections</title>
-        <pubTime>2016-08-19T08:04:17.000Z</pubTime>
+        <title>HDU5835 Danganronpa</title>
+        <pubTime>2016-08-20T10:06:30.000Z</pubTime>
         
-        <tag>2016多校</tag>
-         
         <tag>HDU</tag>
          
-        <tag>树状数组</tag>
+        <tag>2016CCPC</tag>
+         
+        <tag>杂题</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2016/08/16/HDU5838-Mountain/</loc>
+    <lastmod>2016-08-20T10:09:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU5838 Mountain</title>
+        <pubTime>2016-08-16T10:03:52.000Z</pubTime>
+        
+        <tag>HDU</tag>
+         
+        <tag>2016CCPC</tag>
+         
+        <tag>状压DP</tag>
+         
+        <tag>容斥</tag>
          
          
            
@@ -26,7 +49,7 @@
     
   <url>
     <loc>http://thea-r.github.io/2016/08/19/HDU5861-Road/</loc>
-    <lastmod>2016-08-19T08:21:08.000Z</lastmod>
+    <lastmod>2016-08-19T08:41:52.000Z</lastmod>
     <data>
         <display>
         <title>HDU5861 Road</title>
@@ -37,6 +60,29 @@
         <tag>HDU</tag>
          
         <tag>线段树</tag>
+         
+        <tag>树状数组</tag>
+         
+        <tag>扫描线</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/</loc>
+    <lastmod>2016-08-19T08:37:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU5862 Counting Intersections</title>
+        <pubTime>2016-08-19T08:04:17.000Z</pubTime>
+        
+        <tag>2016多校</tag>
+         
+        <tag>HDU</tag>
          
         <tag>树状数组</tag>
          
@@ -60,29 +106,6 @@
         <tag>HDU</tag>
          
         <tag>搜索</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2016/08/16/HDU5838-Mountain/</loc>
-    <lastmod>2016-08-19T08:08:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU5838 Mountain</title>
-        <pubTime>2016-08-16T10:03:52.000Z</pubTime>
-        
-        <tag>2016多校</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>状压DP</tag>
-         
-        <tag>容斥</tag>
          
          
            

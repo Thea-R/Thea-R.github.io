@@ -10,13 +10,13 @@
   
 
   
-  <meta name="description" content="2016CCPC网络赛  
+  <meta name="description" content="2016 CCPC网络赛  
 　　题意：给定n*m的方格及所有的局部最小值位置，放入数1－n*m，求可能的方案。 - 原题链接">
   
 
   
   
-  <meta name="keywords" content="2016多校,HDU,状压DP,容斥">
+  <meta name="keywords" content="HDU,2016CCPC,状压DP,容斥">
   
 
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -90,7 +90,7 @@
   <div class="article-content">
     <div class="entry">
       
-        <script src="/assets/js/DPlayer.min.js"> </script><p>　　2016CCPC网络赛  </p>
+        <script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 CCPC网络赛  </p>
 <p>　　题意：给定n*m的方格及所有的局部最小值位置，放入数1－n*m，求可能的方案。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5838" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
 <p>　　赛时写了一发BFS，从小到大填数，填满局部最小值后乘上剩余方格数的阶乘，问题在于无法保证剩余方格数为非局部最小值。赛后才知道这是我CQOI2012原题，然而并没有做过＝ ＝<br>　　考虑这道题的规模可以状态压缩，总共25个数，最多9个局部最小值，用f[i][j]表示放入前i个数，所有局部最小值的状态为j时的总方案数。填数时预处理cnt[j]，计算出j状态下包括局部最小值在内的所有可放的格子数，状态转移可以表示为：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">f[i][j]=f[i<span class="number">-1</span>][j]*(cnt[j]-(i<span class="number">-1</span>))+sig(f[i<span class="number">-1</span>][j^(<span class="number">1</span>&lt;&lt;k)])(j&amp;(<span class="number">1</span>&lt;&lt;k)==<span class="number">1</span>)</div></pre></td></tr></table></figure></p>
 <p>　　要确保非局部最小值则需要枚举原状态下可能的局部最小值，容斥即可。因为自己写容斥比较少，整个程序学习的<a href="http://blog.csdn.net/popoqqq/article/details/48028773" target="_blank" rel="external">这篇博客</a>，好像对容斥更理解了一点&gt;&lt;<br>　　然而so sad，写了两天的程序，<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2669" target="_blank" rel="external">CQOI原题</a>都AC了，却一直通不过杭电的数据T T<br>　　人生总是艰难，这游戏不想玩了，bug留到以后de吧…  </p>
@@ -114,7 +114,7 @@
 
     <span class="post-tags">
       <i class="icon-tags"></i>
-        <a href="/tags/2016多校/">2016多校</a><a href="/tags/HDU/">HDU</a><a href="/tags/状压DP/">状压DP</a><a href="/tags/容斥/">容斥</a>
+        <a href="/tags/HDU/">HDU</a><a href="/tags/2016CCPC/">2016CCPC</a><a href="/tags/状压DP/">状压DP</a><a href="/tags/容斥/">容斥</a>
     </span>
     
 
