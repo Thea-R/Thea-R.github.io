@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://thea-r.github.io/2016/08/13/Hello-World/</loc>
+    <lastmod>2016-08-21T07:17:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-08-13T13:23:49.000Z</pubTime>
+        
+        <tag>fragment</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://thea-r.github.io/2016/08/20/HDU5835-Danganronpa/</loc>
     <lastmod>2016-08-21T07:15:28.000Z</lastmod>
     <data>
@@ -157,22 +174,5 @@
 
     
     
-    
-  <url>
-    <loc>http://thea-r.github.io/2016/08/13/Hello-World/</loc>
-    <lastmod>2016-08-14T01:59:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-08-13T13:23:49.000Z</pubTime>
-        
-        <tag>fragment</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
 </urlset>
