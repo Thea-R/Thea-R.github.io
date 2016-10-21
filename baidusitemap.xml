@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://thea-r.github.io/2016/10/21/POJ1486-Sorting-Slides/</loc>
+    <lastmod>2016-10-21T13:40:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>POJ1486 Sorting Slides</title>
+        <pubTime>2016-10-21T13:23:45.000Z</pubTime>
+        
+        <tag>POJ</tag>
+         
+        <tag>二分匹配</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/</loc>
+    <lastmod>2016-10-21T13:33:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU5862 Counting Intersections</title>
+        <pubTime>2016-08-19T08:04:17.000Z</pubTime>
+        
+        <tag>2016多校</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>树状数组</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://thea-r.github.io/2016/08/13/Hello-World/</loc>
     <lastmod>2016-08-21T07:17:58.000Z</lastmod>
     <data>
@@ -81,27 +121,6 @@
         <tag>树状数组</tag>
          
         <tag>扫描线</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/</loc>
-    <lastmod>2016-08-19T08:37:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU5862 Counting Intersections</title>
-        <pubTime>2016-08-19T08:04:17.000Z</pubTime>
-        
-        <tag>2016多校</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>树状数组</tag>
          
          
            
