@@ -4,18 +4,44 @@
 
     
   <url>
-    <loc>http://thea-r.github.io/2017/06/24/HDU4689-Derangement/</loc>
-    <lastmod>2017-06-24T09:41:15.000Z</lastmod>
+    <loc>http://thea-r.github.io/2017/06/24/HDU4688-Cut-the-Cake/</loc>
+    <lastmod>2017-06-24T13:49:13.000Z</lastmod>
     <data>
         <display>
-        <title>HDU4689-Derangement</title>
-        <pubTime>2017-06-24T08:50:10.000Z</pubTime>
+        <title>HDU4688 Cut the Cake</title>
+        <pubTime>2017-06-24T13:07:08.000Z</pubTime>
         
+        <tag>2013多校</tag>
+         
         <tag>HDU</tag>
+         
+        <tag>计算几何</tag>
          
         <tag>DP</tag>
          
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/06/24/HDU4689-Derangement/</loc>
+    <lastmod>2017-06-24T13:06:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU4689 Derangement</title>
+        <pubTime>2017-06-24T08:50:10.000Z</pubTime>
+        
         <tag>2013多校</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>DP</tag>
          
          
            
