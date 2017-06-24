@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://thea-r.github.io/"/>
-  <updated>2017-06-24T09:31:52.000Z</updated>
+  <updated>2017-06-24T09:41:15.000Z</updated>
   <id>http://thea-r.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://thea-r.github.io/2017/06/24/HDU4689-Derangement/"/>
     <id>http://thea-r.github.io/2017/06/24/HDU4689-Derangement/</id>
     <published>2017-06-24T08:50:10.000Z</published>
-    <updated>2017-06-24T09:31:52.000Z</updated>
+    <updated>2017-06-24T09:41:15.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2013 Multi-University Training Contest 9  </p>
 <p>　　题意：定义初始排列为1、2、…、n，定义一个n排列A[]， 若i&gt;A[i]表示为’+’，i<a[i]表示为'-'，给定一个排列的表示方法（只包含'+'、'-'长度为n字符串），问有多少个这样的排列。[ -="" 原题链接](http:="" acm.hdu.edu.cn="" showproblem.php?pid="4689)" <a="" id="more">  </a[i]表示为'-'，给定一个排列的表示方法（只包含'+'、'-'长度为n字符串），问有多少个这样的排列。[></p>
@@ -54,10 +54,14 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
       <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
+    
+      <category term="2013多校" scheme="http://thea-r.github.io/tags/2013%E5%A4%9A%E6%A0%A1/"/>
     
   </entry>
   
@@ -66,7 +70,7 @@
     <link href="http://thea-r.github.io/2016/10/21/POJ1486-Sorting-Slides/"/>
     <id>http://thea-r.github.io/2016/10/21/POJ1486-Sorting-Slides/</id>
     <published>2016-10-21T13:23:45.000Z</published>
-    <updated>2016-10-21T13:40:25.000Z</updated>
+    <updated>2017-06-24T09:39:52.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　题意：给定n个矩形n个点，将矩形和点一一对应，判断是否存在唯一的配对情况。<a href="http://poj.org/problem?id=1486" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
 <p>　　先找出任意完备匹配，再枚举匹配中的每一条边，若删去该边仍能找到完备匹配，则该该边对应的矩形没有唯一配对方案。  </p>
@@ -82,6 +86,8 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="POJ" scheme="http://thea-r.github.io/tags/POJ/"/>
     
@@ -94,7 +100,7 @@
     <link href="http://thea-r.github.io/2016/08/20/HDU5835-Danganronpa/"/>
     <id>http://thea-r.github.io/2016/08/20/HDU5835-Danganronpa/</id>
     <published>2016-08-20T10:06:30.000Z</published>
-    <updated>2016-08-21T07:15:28.000Z</updated>
+    <updated>2017-06-24T09:40:05.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 CCPC网络赛  </p>
 <p>　　题意：每桌放两个物品，分别作为特殊礼物和普通礼物，要求任意相邻桌的特殊礼物不同种类。现在给定n种物品的数量，求最多能布置多少桌。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5835" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
@@ -117,6 +123,8 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
@@ -131,7 +139,7 @@
     <link href="http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/"/>
     <id>http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/</id>
     <published>2016-08-19T08:04:17.000Z</published>
-    <updated>2016-10-21T13:33:01.000Z</updated>
+    <updated>2017-06-24T09:40:00.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 10  </p>
 <p>　　题意：给定n条垂直于坐标轴的线段，求交点个数。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5862" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
@@ -151,6 +159,8 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
@@ -165,7 +175,7 @@
     <link href="http://thea-r.github.io/2016/08/19/HDU5861-Road/"/>
     <id>http://thea-r.github.io/2016/08/19/HDU5861-Road/</id>
     <published>2016-08-19T08:04:03.000Z</published>
-    <updated>2016-08-19T08:41:52.000Z</updated>
+    <updated>2017-06-24T09:40:49.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 10  </p>
 <p>　　题意：一条大道被n个村庄分成n－1条路，每条道路开放一天的花费为c[i]，道路初始为关闭状态，可以任意选择开放或关闭某条道路，道路被关闭后不能再次开放。现在有m天的运输任务，每天从村庄l[i]运输货物到村庄r[i]，要求运输路程中的所有道路均为开放状态。求满足运输任务前提下的最小花费。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5861" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
@@ -182,6 +192,8 @@
 &lt;p&gt;　　题意：一条大道被n个村庄分成n－1条路，每条道路开放一天的花费为c[i]，道路初始为关闭状态，可以任意选择开放或关闭某条道路，道路被关闭后不能再次开放。现在有m天的运输任务，每天从村庄l[i]运输货物到村庄r[i]，要求运输路程中的所有道路均为开放状态。求满足运输任务前提下的最小花费。&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5861&quot;&gt; - 原题链接&lt;/a&gt;&lt;br&gt;
     
     </summary>
+    
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
@@ -201,7 +213,7 @@
     <link href="http://thea-r.github.io/2016/08/19/HDU5860-Death-Sequence/"/>
     <id>http://thea-r.github.io/2016/08/19/HDU5860-Death-Sequence/</id>
     <published>2016-08-19T06:17:11.000Z</published>
-    <updated>2016-08-19T08:07:53.000Z</updated>
+    <updated>2017-06-24T09:41:02.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 10  </p>
 <p>　　题意：n个人报数，每一轮报数(i*k+1)的人淘汰，到队列末尾后剩余人员进行新一轮报数，直至全员淘汰。给定m次查询，求第j个出队者的序号。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5860" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
@@ -220,6 +232,8 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
@@ -234,7 +248,7 @@
     <link href="http://thea-r.github.io/2016/08/16/HDU5838-Mountain/"/>
     <id>http://thea-r.github.io/2016/08/16/HDU5838-Mountain/</id>
     <published>2016-08-16T10:03:52.000Z</published>
-    <updated>2016-08-20T10:09:07.000Z</updated>
+    <updated>2017-06-24T09:40:43.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 CCPC网络赛  </p>
 <p>　　题意：给定n*m的方格及所有的局部最小值位置，放入数1－n*m，求可能的方案。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5838" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
@@ -253,6 +267,8 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
@@ -269,7 +285,7 @@
     <link href="http://thea-r.github.io/2016/08/15/HDU5727-Necklace/"/>
     <id>http://thea-r.github.io/2016/08/15/HDU5727-Necklace/</id>
     <published>2016-08-15T07:40:27.000Z</published>
-    <updated>2016-08-19T08:08:13.000Z</updated>
+    <updated>2017-06-24T09:40:54.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 1  </p>
 <p>　　题意：给定若干阴阳珠子交错排列成环，有些阳珠与特定的阴珠相邻时会褪色，求最少的褪色数。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5727" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
@@ -291,6 +307,8 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
@@ -305,7 +323,7 @@
     <link href="http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/"/>
     <id>http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/</id>
     <published>2016-08-13T14:46:36.000Z</published>
-    <updated>2016-08-19T08:08:01.000Z</updated>
+    <updated>2017-06-24T09:40:58.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 8  </p>
 <p>　　题意：n元素序列，给定m种操作——区间加法，区间开方，区间求和。对于每个求和操作，输出结果。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5828" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
@@ -330,6 +348,8 @@
     
     </summary>
     
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
@@ -344,7 +364,7 @@
     <link href="http://thea-r.github.io/2016/08/13/Hello-World/"/>
     <id>http://thea-r.github.io/2016/08/13/Hello-World/</id>
     <published>2016-08-13T13:23:49.000Z</published>
-    <updated>2016-08-21T07:17:58.000Z</updated>
+    <updated>2017-06-24T09:40:34.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　第一篇文，你以为会有摘要？<br><a id="more"></a>  </p>
 <p>　　讲真，粉色不是我的style… 而且site title的字体是不是太小了一点😕<br>　　奈何其他主题大大小小缺陷更多🙄️<br>　　强迫症患者早晚会自己捣鼓一个满意的主题出来的，奇怪的flag🙊<br>　　所以拖延症患者的早晚到底是多晚呢🌚<br>　　whatever，折腾这么久终于步入正轨了，Hello World~  </p>
@@ -359,6 +379,8 @@
       &lt;p&gt;　　第一篇文，你以为会有摘要？&lt;br&gt;
     
     </summary>
+    
+      <category term="fragment" scheme="http://thea-r.github.io/categories/fragment/"/>
     
     
       <category term="fragment" scheme="http://thea-r.github.io/tags/fragment/"/>
