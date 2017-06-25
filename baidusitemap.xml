@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-06-25T13:37:09.000Z</lastmod>
+    <data>
+        <display>
+        <title>2017暑假集训记录</title>
+        <pubTime>2017-06-25T11:05:33.000Z</pubTime>
+        
+        <tag>record</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://thea-r.github.io/2017/06/25/HDU6024-Innumerable-Ancestors/</loc>
     <lastmod>2017-06-25T13:35:53.000Z</lastmod>
     <data>
@@ -49,26 +69,6 @@
            
              
               <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2017-06-25T13:26:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>2017暑假集训记录</title>
-        <pubTime>2017-06-25T11:05:33.000Z</pubTime>
-        
-        <tag>record</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
           
         </display>
     </data>

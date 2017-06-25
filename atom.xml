@@ -58,7 +58,7 @@
     <link href="http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/"/>
     <id>http://thea-r.github.io/2017/06/25/2017暑假集训记录/</id>
     <published>2017-06-25T11:05:33.000Z</published>
-    <updated>2017-06-25T13:26:06.000Z</updated>
+    <updated>2017-06-25T13:37:09.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　暑假集训个人日常。  </p>
 <a id="more"></a>  
@@ -78,7 +78,7 @@
 </li>
 </ol>
 <h1 id="day2-06-25"><a href="#day2-06-25" class="headerlink" title="day2 06.25"></a>day2 06.25</h1><ol>
-<li><h3 id="TeamTraining：2017中国大学生程序设计竞赛-女生专场-—-rank4"><a href="#TeamTraining：2017中国大学生程序设计竞赛-女生专场-—-rank4" class="headerlink" title="TeamTraining：2017中国大学生程序设计竞赛 - 女生专场 — rank4"></a><a href="http://icpc.njust.edu.cn/Contest/1096/" target="_blank" rel="external">TeamTraining：2017中国大学生程序设计竞赛 - 女生专场 — rank4</a></h3><p><del>A    Automatic Judge（模拟）</del><br><del>B    Building Shops（DP）</del><br>C    Coprime Sequence（数学）<br><del>D    Deleting Edges（最短路计数）</del><br>E    Easy Summation（数学）<br>F    Forgiveness（？？？）<br>G    Graph Theory（。。。）<br>H    Happy Necklace（矩阵快速幂）<br><del>I    Innumerable Ancestors（LCA + 二分）</del><br>J    Judicious Strategy（博弈）</p>
+<li><h3 id="TeamTraining：2017中国大学生程序设计竞赛-女生专场-—-rank4"><a href="#TeamTraining：2017中国大学生程序设计竞赛-女生专场-—-rank4" class="headerlink" title="TeamTraining：2017中国大学生程序设计竞赛 - 女生专场 — rank4"></a><a href="http://icpc.njust.edu.cn/Contest/1096/" target="_blank" rel="external">TeamTraining：2017中国大学生程序设计竞赛 - 女生专场 — rank4</a></h3><p><del>A    Automatic Judge（模拟）</del><br><del>B    Building Shops（DP）</del><br>C    Coprime Sequence（数学）<br><del>D    Deleting Edges（最短路计数）</del><br>E    Easy Summation（数学）<br>F    Forgiveness（？？？）<br>G    Graph Theory（。。。）<br>H    Happy Necklace（矩阵快速幂）<br><del><a href="https://thea-r.github.io/2017/06/25/HDU6024-Innumerable-Ancestors/">I    Innumerable Ancestors（LCA + 二分）</a></del><br>J    Judicious Strategy（博弈）</p>
 </li>
 <li><h3 id="Summarize-1"><a href="#Summarize-1" class="headerlink" title="Summarize"></a>Summarize</h3><p>　　开场就上去敲了一发A题签到1A，然后队友就在我题目都没看过的时候过掉了E、C、G… 看了一下B题是个简单DP也不知道为什么没人开，而且赛后发现我的DP比标程还少一维hhhhhhh。天神和Messy在推H矩阵的时候我在旁边无所事事，只能痛苦地读新题来打发时间🙃 后来就进入了大佬口述我敲代码的环节… 结果D题脑残wa了好几发狂爆罚时，I题对着模版调了半天还是没写出来，太弱了。本来一度挂在rank1，然后罚时爆炸+后半程开不出题不断往下掉，感觉真是很不爽。可能是集训前几天，感觉三个人还没调整到正确的代码状态，脑残错误有点多，考虑后面做做手速训练。  </p>
 </li>
