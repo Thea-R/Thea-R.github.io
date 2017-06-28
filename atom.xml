@@ -58,12 +58,14 @@
     <link href="http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/"/>
     <id>http://thea-r.github.io/2017/06/25/2017暑假集训记录/</id>
     <published>2017-06-25T11:05:33.000Z</published>
-    <updated>2017-06-27T12:12:05.000Z</updated>
+    <updated>2017-06-28T06:06:16.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　暑假集训个人日常。  </p>
 <a id="more"></a>  
 <p>　　  </p>
 <hr>
+<p>　　  </p>
+<p>[TOC]</p>
 <p>　　  </p>
 <h1 id="day1-06-24"><a href="#day1-06-24" class="headerlink" title="day1 06.24"></a>day1 06.24</h1><ol>
 <li><h3 id="TeamTraining：2013-Multi-University-Training-Contest-9-—-rank2"><a href="#TeamTraining：2013-Multi-University-Training-Contest-9-—-rank2" class="headerlink" title="TeamTraining：2013 Multi-University Training Contest 9 — rank2"></a><a href="http://icpc.njust.edu.cn/Contest/1097/" target="_blank" rel="external">TeamTraining：2013 Multi-University Training Contest 9 — rank2</a></h3><p><del>A    Arc of Dream（矩阵快速幂）</del><br>B    Boke and Tsukkomi（带花树）<br><del><a href="https://thea-r.github.io/2017/06/24/HDU4688-Cut-the-Cake/">C    Cut the Cake（计算几何 + DP）</a></del><br><del><a href="https://thea-r.github.io/2017/06/24/HDU4689-Derangement/">D    Derangement（DP）</a></del><br><del>E    EBCDIC（模拟）</del><br>F    Front compression（后缀数组）<br>G    Great Sequence（？？？）<br>H    Huge String（DFS）<br>I    Important Sisters（支配树）<br>J    Jumping Frog（线性递推）</p>
@@ -87,7 +89,7 @@
 </li>
 <li><h3 id="ToDoList-1"><a href="#ToDoList-1" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。    学习lca，整理模版  </p>
 </li>
-<li><h3 id="CF-420-div-2"><a href="#CF-420-div-2" class="headerlink" title="CF # 420 div.2"></a><a href="http://codeforces.com/contest/821" target="_blank" rel="external">CF # 420 div.2</a></h3><p><del>A    Okabe and Future Gadget Laboratory    x4117</del><br><del>B    Okabe and Banana Trees    x3026</del><br><del>C    Okabe and Boxes     x2167</del>（补题解）<br>D    Okabe and City     x330<br>E    Okabe and El Psy Kongroo     x477</p>
+<li><h3 id="CF-420-div-2"><a href="#CF-420-div-2" class="headerlink" title="CF # 420 div.2"></a><a href="http://codeforces.com/contest/821" target="_blank" rel="external">CF # 420 div.2</a></h3><p><del>A    Okabe and Future Gadget Laboratory    x4117</del><br><del>B    Okabe and Banana Trees    x3026</del><br><del>C    Okabe and Boxes     x2167</del>（补题解）<br><del>D    Okabe and City     x330</del>（补题解）<br><del>E    Okabe and El Psy Kongroo     x477</del>补题解</p>
 <p>　　这场手速还行，结果神tm的又unrated，打的为数不多的几场比赛几乎都各种莫名其妙问题unrated，论我为什么不爱打CF🤷不过还是切不动后两题，继续修炼吧少年。  </p>
 <p>​</p>
 </li>
@@ -112,10 +114,21 @@
 </li>
 <li><h3 id="ToDoList-3"><a href="#ToDoList-3" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。    no new missions  </p>
 </li>
-<li><h3 id="CF-421-div-2"><a href="#CF-421-div-2" class="headerlink" title="CF # 421 div.2"></a><a href="">CF # 421 div.2</a></h3><p>​</p>
+<li><h3 id="CF-421-div-2"><a href="#CF-421-div-2" class="headerlink" title="CF # 421 div.2"></a><a href="http://codeforces.com/contest/820" target="_blank" rel="external">CF # 421 div.2</a></h3><p><del>A    Mister B and Book Reading     x3644</del><br><del>B    Mister B and Angle in Polygon     x2620</del><br>C    Mister B and Boring Game     x37<br>D    Mister B and PR Shifts     x209<br>E    Mister B and Beacons on Field     x2</p>
+<p>　　B题写了好久，果然我的二分姿势还是有待提高。疯狂讨论c题的各种if，结果题目有错误… 这就是我打的比赛都unrated的理由吗🤷‍♀️  </p>
+<p>​</p>
 </li>
 </ol>
-<h1 id="day5-06-28"><a href="#day5-06-28" class="headerlink" title="day5 06.28"></a>day5 06.28</h1><p>to be continued ..  </p>
+<h1 id="day5-06-28"><a href="#day5-06-28" class="headerlink" title="day5 06.28"></a>day5 06.28</h1><ol>
+<li><h3 id="TeamTraining：2012-Asia-Changchun-Regional-Contest-—-no-rank"><a href="#TeamTraining：2012-Asia-Changchun-Regional-Contest-—-no-rank" class="headerlink" title="TeamTraining：2012 Asia Changchun Regional Contest — no rank"></a><a href="http://icpc.njust.edu.cn/Contest/1100/" target="_blank" rel="external">TeamTraining：2012 Asia Changchun Regional Contest — no rank</a></h3><p>A    Alice and Bob<br><del>B    Bit Magic（2-SAT）</del><br>C    The Little Girl who Picks Mushrooms<br>D    Simple Function<br>E    Conquer a New Region（并查集）<br>F    Fantastic Necklace<br>G    Palindromic Substring<br>H    Math Magic（DP）<br>I    Polaris of Pandora<br>J    Split the Rectangle<br>K    Yukari’s Birthday</p>
+</li>
+<li><h3 id="Summarize-4"><a href="#Summarize-4" class="headerlink" title="Summarize"></a>Summarize</h3><p>　　以为2-SAT是我的part，结果各种建边错误segmentation fault+wrong answer六发罚时爆炸。果然有模版只是第一步，理解不够什么都于事无补。J题可做性更高，可惜开得太迟。又是大佬队友带飞的一场比赛…  </p>
+</li>
+<li><h3 id="Chaos-4"><a href="#Chaos-4" class="headerlink" title="Chaos"></a>Chaos</h3><p>　　😯。  </p>
+</li>
+<li><h3 id="ToDoList-4"><a href="#ToDoList-4" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。    no new missions  </p>
+</li>
+</ol>
 <p><br></p>
 ]]></content>
     
