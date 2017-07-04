@@ -74,18 +74,41 @@
 <li><h3 id="ToDoList-3"><a href="#ToDoList-3" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。    no new missions  </p>
 </li>
 <li><h3 id="CF-421-div-2"><a href="#CF-421-div-2" class="headerlink" title="CF # 421 div.2"></a><a href="http://codeforces.com/contest/820" target="_blank" rel="external">CF # 421 div.2</a></h3><p><del>A    Mister B and Book Reading     x3644</del><br><del>B    Mister B and Angle in Polygon     x2620</del><br>C    Mister B and Boring Game     x37<br>D    Mister B and PR Shifts     x209<br>E    Mister B and Beacons on Field     x2</p>
-<p>　　B题写了好久，果然我的二分姿势还是有待提高。疯狂讨论c题的各种if，结果题目有错误… 这就是我打的比赛都unrated的理由吗🤷‍♀️  </p>
+<p>　　B题写了好久，果然我的二分姿势还是有待提高。疯狂讨论c题的各种if，结果题目有错误… 这就是我打的这么多比赛都unrated的理由吗🤷‍♀️  </p>
 <p>​</p>
 </li>
 </ol>
 <h1 id="day5-06-28"><a href="#day5-06-28" class="headerlink" title="day5 06.28"></a>day5 06.28</h1><ol>
-<li><h3 id="TeamTraining：2012-Asia-Changchun-Regional-Contest-—-no-rank"><a href="#TeamTraining：2012-Asia-Changchun-Regional-Contest-—-no-rank" class="headerlink" title="TeamTraining：2012 Asia Changchun Regional Contest — no rank"></a><a href="http://icpc.njust.edu.cn/Contest/1100/" target="_blank" rel="external">TeamTraining：2012 Asia Changchun Regional Contest — no rank</a></h3><p>A    Alice and Bob<br><del>B    Bit Magic（2-SAT）</del><br>C    The Little Girl who Picks Mushrooms<br>D    Simple Function<br>E    Conquer a New Region（并查集）<br>F    Fantastic Necklace<br>G    Palindromic Substring<br>H    Math Magic（DP）<br>I    Polaris of Pandora<br>J    Split the Rectangle<br>K    Yukari’s Birthday</p>
+<li><h3 id="TeamTraining：2012-Asia-Changchun-Regional-Contest-—-no-rank"><a href="#TeamTraining：2012-Asia-Changchun-Regional-Contest-—-no-rank" class="headerlink" title="TeamTraining：2012 Asia Changchun Regional Contest — no rank"></a><a href="http://icpc.njust.edu.cn/Contest/1100/" target="_blank" rel="external">TeamTraining：2012 Asia Changchun Regional Contest — no rank</a></h3><p>A    Alice and Bob（RMQ）<br><del>B    Bit Magic（2-SAT）</del><br>C    The Little Girl who Picks Mushrooms<br>D    Simple Function<br><del>E    Conquer a New Region（并查集）</del><br>F    Fantastic Necklace<br>G    Palindromic Substring<br><del>H    Math Magic（DP）</del><br>I    Polaris of Pandora<br><del>J    Split the Rectangle（LCA）</del><br>K    Yukari’s Birthday</p>
 </li>
 <li><h3 id="Summarize-4"><a href="#Summarize-4" class="headerlink" title="Summarize"></a>Summarize</h3><p>　　以为2-SAT是我的part，结果各种建边错误segmentation fault+wrong answer六发罚时爆炸。果然有模版只是第一步，理解不够什么都于事无补。J题可做性更高，可惜开得太迟。又是大佬队友带飞的一场比赛…  </p>
 </li>
-<li><h3 id="Chaos-4"><a href="#Chaos-4" class="headerlink" title="Chaos"></a>Chaos</h3><p>　　😯。  </p>
+<li><h3 id="Chaos-4"><a href="#Chaos-4" class="headerlink" title="Chaos"></a>Chaos</h3><p>　　午觉睡太久，原本的计划完全打乱，醒过来之后就一阵烦躁啊啊啊啊啊啊啊。和马老师一起去一号门买西瓜，他说小姑娘你这状态不对啊，睡足之后不应该很精神吗，我说睡久了就是很烦嘛，他说你都不会好好管理自己的情绪这不行的啊，然后我眼泪唰一下就下来了。反正走在我的右手边也不会看到我在哭的对吧。  </p>
+<p>　　晚饭之后过掉了J、E、H，DP弱到照着队友AC的代码写出来也还要调试半天😔。不过和马老师一起吃吃晚饭调调代码心情又好很多，果然女孩子还是情绪化啊。  </p>
 </li>
-<li><h3 id="ToDoList-4"><a href="#ToDoList-4" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。    no new missions  </p>
+<li><h3 id="ToDoList-4"><a href="#ToDoList-4" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。    复习2-SAT，刷题  </p>
+<p>​</p>
+</li>
+</ol>
+<h1 id="day6-06-29"><a href="#day6-06-29" class="headerlink" title="day6 06.29"></a>day6 06.29</h1><ol>
+<li><h3 id="TeamTraining：2011-Asia-Dalian-Regional-Contest-—-rank-1"><a href="#TeamTraining：2011-Asia-Dalian-Regional-Contest-—-rank-1" class="headerlink" title="TeamTraining：2011 Asia Dalian Regional Contest — rank 1"></a><a href="http://icpc.njust.edu.cn/Contest/1101/" target="_blank" rel="external">TeamTraining：2011 Asia Dalian Regional Contest — rank 1</a></h3><p>A    Compress the String<br>B    Adding New Machine<br>C    The Last Puzzle（区间DP）<br><del>D    Hexadecimal View（模拟）</del><br>E    Number String（DP）<br>F    Draw a Mess<br><del>G    Rescue the Rabbit（AC自动机+状压DP）</del><br>H    Advanture of Xiaoxingxing<br>I    The Boss on Mars（数学）<br>J    Chess Board</p>
+</li>
+<li><h3 id="Summarize-5"><a href="#Summarize-5" class="headerlink" title="Summarize"></a>Summarize</h3><p>　　睡过头的队友… 然后就写了一上午的AC自动机= = 模版什么的都很easy，问题还是出在DP转移上… 哎还是要练DP啊😕 听说有两道线段树，可惜都没时间去开题。看了一下现场榜，5题手快能有金，如果能在G题出问题的时候让天神一起来考虑一下转移，我再去开一道线段树，说不定就赢了呢（大雾）。  </p>
+</li>
+<li><h3 id="Chaos-5"><a href="#Chaos-5" class="headerlink" title="Chaos"></a>Chaos</h3><p>　　今天… 玩了一天的纪念碑谷和folks。嗯，今天又是一事无成的一天哦🙃  </p>
+</li>
+<li><h3 id="ToDoList-5"><a href="#ToDoList-5" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。　复习AC自动机，刷题  </p>
+<p>​</p>
+</li>
+</ol>
+<h1 id="day7-06-30"><a href="#day7-06-30" class="headerlink" title="day7 06.30"></a>day7 06.30</h1><ol>
+<li><h3 id="TeamTraining：2010-Asia-Chengdu-Regional-Contest-—-rank-2"><a href="#TeamTraining：2010-Asia-Chengdu-Regional-Contest-—-rank-2" class="headerlink" title="TeamTraining：2010 Asia Chengdu Regional Contest — rank 2"></a><a href="http://icpc.njust.edu.cn/Contest/1102/" target="_blank" rel="external">TeamTraining：2010 Asia Chengdu Regional Contest — rank 2</a></h3><p><del>A    Balanced Number（数位DP）</del><br>B    Battle over Cities<br>C    Binary Number<br>D    Detector Placement<br>E    Double Maze<br>F    Error Curves<br><del>G    Go Deeper（2-SAT）</del><br>H    Jenga<br>I    Rescue<br><del>J    Similarity（最佳匹配）</del><br>K    Snooker Referee</p>
+</li>
+<li><h3 id="Summarize-6"><a href="#Summarize-6" class="headerlink" title="Summarize"></a>Summarize</h3><p>　　开了一道数位dp，写了半天，不过样例… 开了一道2-SAT，写了半天，wa… 然后莫名其妙天神就把我的A调出样例了？？？然后莫名其妙他叫了一发就1A了？？？队里有DP大佬为什么还要让我写DP自取其辱啊（摔桌）。后来发现2-SAT是跪在初始化，所以一定要记住二分的题每次都要初始化。看前两个队都过了J题，Messy看了题目想想想了一会儿就说这是个网络流的题，给我讲了一下神奇的构图然后我上去十分钟敲了一个最佳匹配的板子居然就过了… 对比一下前两题我浪费的时间，就觉得很梦幻，简直怀疑人生。  </p>
+</li>
+<li><h3 id="Chaos-6"><a href="#Chaos-6" class="headerlink" title="Chaos"></a>Chaos</h3><p>　　</p>
+</li>
+<li><h3 id="ToDoList-6"><a href="#ToDoList-6" class="headerlink" title="ToDoList"></a>ToDoList</h3><p>。　学习数位DP，整理模版  </p>
 </li>
 </ol>
 <p><br></p>
