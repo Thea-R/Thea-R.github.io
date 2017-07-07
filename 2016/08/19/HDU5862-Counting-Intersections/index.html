@@ -1,94 +1,146 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang=en>
 <head>
-  <meta charset="utf-8">
-  
-  <title>HDU5862 Counting Intersections | 然而，然而</title>
-
-  
-  <meta name="author" content="Thea-R">
-  
-
-  
-  <meta name="description" content="2016 Multi-University Training Contest 10  
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="2016 Multi-University Training Contest 10  
 　　题意：给定n条垂直于坐标轴的线段，求交点个数。 - 原题链接">
-  
-
-  
-  
-  <meta name="keywords" content="HDU,2016多校,树状数组">
-  
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <meta property="og:title" content="HDU5862 Counting Intersections"/>
-
-  <meta property="og:site_name" content="然而，然而"/>
-
-  
-  <meta property="og:image" content="/favicon.ico"/>
-  
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="然而，然而" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HDU5862 Counting Intersections">
+<meta property="og:url" content="http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/index.html">
+<meta property="og:site_name" content="然而，然而">
+<meta property="og:description" content="2016 Multi-University Training Contest 10  
+　　题意：给定n条垂直于坐标轴的线段，求交点个数。 - 原题链接">
+<meta property="og:updated_time" content="2017-06-24T09:40:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HDU5862 Counting Intersections">
+<meta name="twitter:description" content="2016 Multi-University Training Contest 10  
+　　题意：给定n条垂直于坐标轴的线段，求交点个数。 - 原题链接">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>HDU5862 Counting Intersections</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
 </head>
 
-
 <body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">然而，然而</a>
-    </h1>
-    <p class="site-description"></p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
-      
-        <li><a href="/">Home</a></li>
-      
-        <li><a href="/archives">Archives</a></li>
-      
-        <li><a href="/links">Blogrolls</a></li>
-      
-        <li><a href="/about">About</a></li>
-      
-    </ul>
-  </nav>
-</header>
-
-    <main class="site-main posts-loop">
-    <article>
-
-  
     
-    <h3 class="article-title"><span>HDU5862 Counting Intersections</span></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/08/19/HDU5862-Counting-Intersections/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-08-19T08:04:17.000Z">
-          2016-08-19
-        </time>
-      </a>
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/probberechts">Projects</a></li>
+        
+      </ul>
     </span>
-  </div>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/08/20/HDU5835-Danganronpa/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/08/19/HDU5861-Road/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&text=HDU5862 Counting Intersections"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&is_video=false&description=HDU5862 Counting Intersections"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=HDU5862 Counting Intersections&body=Check out this article: http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&name=HDU5862 Counting Intersections&description=&lt;p&gt;　　2016 Multi-University Training Contest 10  &lt;/p&gt;
+&lt;p&gt;　　题意：给定n条垂直于坐标轴的线段，求交点个数。&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5862&quot;&gt; - 原题链接&lt;/a&gt;&lt;br&gt;"><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        HDU5862 Counting Intersections
+    </h1>
 
 
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">然而，然而</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-08-19T08:04:17.000Z" itemprop="datePublished">2016-08-19</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/2016多校/">2016多校</a>, <a class="tag-link" href="/tags/HDU/">HDU</a>, <a class="tag-link" href="/tags/树状数组/">树状数组</a>
+    </div>
+
+
+    </div>
+  </header>
   
 
-  <div class="article-content">
-    <div class="entry">
-      
-        <script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 10  </p>
+  <div class="content" itemprop="articleBody">
+    <script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 10  </p>
 <p>　　题意：给定n条垂直于坐标轴的线段，求交点个数。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5862" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
 <p>　　题目中线段被限制为垂直或水平。将线段坐标离散化后，按纵坐标从小到大扫描。遇到垂直线段的下端点，则插入该线段的横坐标值；遇到水平线段，则查询x1[i]到x2[i]的区间和；遇到垂直线段的上端点，则删除该线段的横坐标值。线段树、树状数组均可以维护。<br>　　需要注意的是纵坐标相同时，三种操作的顺序不能变。第一次的代码开了三个vector来记录三种操作序列，结果MLE… 后来改了一下，只用一个vector来记录相同纵坐标的点，每种操作赋优先级0、1、2，在处理每一个vector时先进行内部排序，2418MS AC。两份代码均在下方给出。  </p>
 <p><br></p>
@@ -98,53 +150,108 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//MLE代码</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> lowbit(x) ((x)&amp;-(x))</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">1e6</span> + <span class="number">10</span>;</div><div class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> lint;</div><div class="line"></div><div class="line"><span class="keyword">int</span> T, n, N, M, a[maxn&lt;&lt;<span class="number">1</span>], b[maxn&lt;&lt;<span class="number">1</span>], s[maxn&lt;&lt;<span class="number">1</span>];</div><div class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vct1[maxn&lt;&lt;<span class="number">1</span>], vct2[maxn&lt;&lt;<span class="number">1</span>], vct3[maxn&lt;&lt;<span class="number">1</span>];</div><div class="line"><span class="keyword">struct</span> line</div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> x1, y1, x2, y2, d;</div><div class="line">    line(<span class="keyword">int</span> xx1=<span class="number">0</span>, <span class="keyword">int</span> yy1=<span class="number">0</span>, <span class="keyword">int</span> xx2=<span class="number">0</span>, <span class="keyword">int</span> yy2=<span class="number">0</span>) &#123; x1=xx1, y1=yy1, x2=xx2, y2=yy2; &#125;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">read</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;x1, &amp;y1, &amp;x2, &amp;y2);</div><div class="line">        <span class="keyword">if</span>(x1&gt;x2)    swap(x1, x2);</div><div class="line">        <span class="keyword">if</span>(y1&gt;y2)    swap(y1, y2);</div><div class="line">        a[++N]=x1, a[++N]=x2, b[++M]=y1, b[++M]=y2;</div><div class="line">        <span class="keyword">return</span> ;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">hash</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        x1=lower_bound(a+<span class="number">1</span>, a+<span class="number">1</span>+N, x1)-a, x2=lower_bound(a+<span class="number">1</span>, a+<span class="number">1</span>+N, x2)-a;</div><div class="line">        y1=lower_bound(b+<span class="number">1</span>, b+<span class="number">1</span>+M, y1)-b, y2=lower_bound(b+<span class="number">1</span>, b+<span class="number">1</span>+M, y2)-b;</div><div class="line">        <span class="keyword">return</span> ;</div><div class="line">    &#125;</div><div class="line">&#125;seg[maxn];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> val)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=x; i&lt;=N; i+=lowbit(i))    s[i]+=val;</div><div class="line">    <span class="keyword">return</span> ;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">Query</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> ans=<span class="number">0</span>)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=x; i; i-=lowbit(i))    ans+=s[i];</div><div class="line">    <span class="keyword">return</span> ans;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Clear</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;=M; i++)    vct1[i].clear(), vct2[i].clear(), vct3[i].clear();</div><div class="line">    <span class="built_in">memset</span>(s, <span class="number">0</span>, <span class="keyword">sizeof</span> s);</div><div class="line">    N=M=<span class="number">0</span>;</div><div class="line">    <span class="keyword">return</span> ;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</div><div class="line">    <span class="keyword">while</span>(T--)</div><div class="line">    &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)    seg[i].read();</div><div class="line"></div><div class="line">        sort(a+<span class="number">1</span>, a+<span class="number">1</span>+N);</div><div class="line">        sort(b+<span class="number">1</span>, b+<span class="number">1</span>+M);</div><div class="line">        N=unique(a+<span class="number">1</span>, a+<span class="number">1</span>+N)-a<span class="number">-1</span>;</div><div class="line">        M=unique(b+<span class="number">1</span>, b+<span class="number">1</span>+M)-b<span class="number">-1</span>;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)    seg[i].hash();</div><div class="line"></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(seg[i].y1==seg[i].y2)    vct1[seg[i].y1].push_back(i);</div><div class="line">            <span class="keyword">else</span> vct2[seg[i].y1].push_back(i), vct3[seg[i].y2].push_back(i);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        lint ans=<span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=M; i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>, len=vct2[i].size(); j&lt;len; j++)    Add(seg[vct2[i][j]].x1, <span class="number">1</span>);</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>, len=vct1[i].size(); j&lt;len; j++)    ans+=Query(seg[vct1[i][j]].x2)-Query(seg[vct1[i][j]].x1<span class="number">-1</span>);</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>, len=vct3[i].size(); j&lt;len; j++)    Add(seg[vct3[i][j]].x1, <span class="number">-1</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</div><div class="line"></div><div class="line">        Clear();</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><br></p>
 
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-      
-
-    <span class="post-categories">
-      <i class="icon-categories"></i>
-        <a href="/categories/ACM题解/">ACM题解</a>
-    </span>
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/HDU/">HDU</a><a href="/tags/2016多校/">2016多校</a><a href="/tags/树状数组/">树状数组</a>
-    </span>
-    
-
-    </div>
-
-    
   </div>
 </article>
 
 
-    </main>
 
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    </br>
+    </div>
     
-    &copy; 2017 Thea-R
-    
-  </p>
-</footer>
-    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/probberechts">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&text=HDU5862 Counting Intersections"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&is_video=false&description=HDU5862 Counting Intersections"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=HDU5862 Counting Intersections&body=Check out this article: http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&title=HDU5862 Counting Intersections"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/&name=HDU5862 Counting Intersections&description=&lt;p&gt;　　2016 Multi-University Training Contest 10  &lt;/p&gt;
+&lt;p&gt;　　题意：给定n条垂直于坐标轴的线段，求交点个数。&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5862&quot;&gt; - 原题链接&lt;/a&gt;&lt;br&gt;"><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
   </div>
 </div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Thea-R
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/probberechts">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
