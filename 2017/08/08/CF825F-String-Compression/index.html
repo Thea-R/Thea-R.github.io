@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。 - 原题链接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CF825F String Compression">
+<meta property="og:url" content="http://thea-r.github.io/2017/08/08/CF825F-String-Compression/index.html">
+<meta property="og:site_name" content="然而，然而">
+<meta property="og:description" content="题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。 - 原题链接">
+<meta property="og:updated_time" content="2017-08-08T02:13:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CF825F String Compression">
+<meta name="twitter:description" content="题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。 - 原题链接">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon.ico" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+          
+        
+    
+    <!-- title -->
+    <title>CF825F String Compression</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/links">Blogrolls</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2017/08/08/CF833B-The-Bakery/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2017/08/08/2017暑假集训记录（二）/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&text=CF825F String Compression"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&is_video=false&description=CF825F String Compression"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CF825F String Compression&body=Check out this article: http://thea-r.github.io/2017/08/08/CF825F-String-Compression/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&name=CF825F String Compression&description=&lt;p&gt;　　题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。&lt;a href=&quot;http://codeforces.com/problemset/problem/825/F&quot;&gt; - 原题链接&lt;/a&gt;   &lt;/p&gt;"><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        CF825F String Compression
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">然而，然而</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-08-08T01:59:32.000Z" itemprop="datePublished">2017-08-08</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/CF/">CF</a>, <a class="tag-link" href="/tags/DP/">DP</a>, <a class="tag-link" href="/tags/KMP/">KMP</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <script src="/assets/js/DPlayer.min.js"> </script><p>　　题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。<a href="http://codeforces.com/problemset/problem/825/F" target="_blank" rel="external"> - 原题链接</a>   </p>
+<a id="more"></a>  
+<p>　　DP思路很显然，我们使用f[i]表示压缩字符串前i位的最短长度，辅助数组g[i][j]表示压缩s[i, j]的最短长度。<br>$$<br>g[i][j]=<br>\begin{cases}<br>{1+(j-i+1)} &amp; \text {没有循环节}\<br>{c[循环节个数]+循环节长度} &amp; \text {有循环节}\<br>\end{cases}\<br>f[i]=min(f[i], f[j]+g[j+1][i])<br>$$<br>　　这道题最大的收获是学到关于sprintf的用法，将数字i写进足够大的char数组buf中，返回buf的长度：<br>$$<br>c[i]=sprintf(buf, “\%d”, i);<br>$$<br><br></p>
+<hr>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">8000</span>+<span class="number">10</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> n, nx[maxn], c[maxn], f[maxn], g[maxn][maxn];</div><div class="line"><span class="keyword">char</span> s[maxn], buf[maxn];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">KMP</span><span class="params">(<span class="keyword">char</span> *ch, <span class="keyword">int</span> len)</span></span></div><div class="line">&#123;</div><div class="line">	nx[<span class="number">1</span>]=<span class="number">0</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>, j=<span class="number">0</span>; i&lt;=len; i++)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">while</span>(j &amp;&amp; ch[i]!=ch[j+<span class="number">1</span>])	j=nx[j];</div><div class="line">		<span class="keyword">if</span>(ch[i]==ch[j+<span class="number">1</span>])	++j;</div><div class="line">		nx[i]=j;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> ;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%s"</span>, s+<span class="number">1</span>)!=EOF)</div><div class="line">	&#123;</div><div class="line">		n=<span class="built_in">strlen</span>(s+<span class="number">1</span>);</div><div class="line"></div><div class="line">		<span class="built_in">memset</span>(g, <span class="number">0</span>, <span class="keyword">sizeof</span> g);</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			c[i]=<span class="built_in">sprintf</span>(buf, <span class="string">"%d"</span>, i);</div><div class="line">			f[i]=i+<span class="number">1</span>;	<span class="comment">//每个字符串T都能压缩为1T</span></div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			KMP(s+i<span class="number">-1</span>, n-i+<span class="number">1</span>);	<span class="comment">//传进去的是s+i-1，保证函数中合法字符串从下标1开始计数</span></div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=n-i+<span class="number">1</span>; j++)</div><div class="line">			&#123;</div><div class="line">				<span class="keyword">int</span> len=j-nx[j];</div><div class="line">				<span class="keyword">if</span>(j%len==<span class="number">0</span>)	g[i][i+j<span class="number">-1</span>]=c[j/len]+len;	<span class="comment">//循环次数+循环节长度</span></div><div class="line">				<span class="keyword">else</span> g[i][i+j<span class="number">-1</span>]=<span class="number">1</span>+j;	<span class="comment">//不循环</span></div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;i; j++)</div><div class="line">				f[i]=min(f[i], f[j]+g[j+<span class="number">1</span>][i]);</div><div class="line">		</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, f[n]);</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><br></p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/links">Blogrolls</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&text=CF825F String Compression"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&is_video=false&description=CF825F String Compression"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CF825F String Compression&body=Check out this article: http://thea-r.github.io/2017/08/08/CF825F-String-Compression/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&title=CF825F String Compression"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://thea-r.github.io/2017/08/08/CF825F-String-Compression/&name=CF825F String Compression&description=&lt;p&gt;　　题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。&lt;a href=&quot;http://codeforces.com/problemset/problem/825/F&quot;&gt; - 原题链接&lt;/a&gt;   &lt;/p&gt;"><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Thea-R
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/links">Blogrolls</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+

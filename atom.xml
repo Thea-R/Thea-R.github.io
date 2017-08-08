@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://thea-r.github.io/"/>
-  <updated>2017-06-25T13:35:53.000Z</updated>
+  <updated>2017-08-08T02:51:46.000Z</updated>
   <id>http://thea-r.github.io/</id>
   
   <author>
@@ -14,6 +14,100 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CF833B The Bakery</title>
+    <link href="http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/"/>
+    <id>http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/</id>
+    <published>2017-08-08T01:59:55.000Z</published>
+    <updated>2017-08-08T02:51:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。<a href="http://codeforces.com/problemset/problem/833/B" target="_blank" rel="external"> - 原题链接</a>   </p>
+<a id="more"></a>  
+<p>　　神奇的线段树… 先碰到多校那场dirt ratio再来做的这道DP，原来这已经是个常（不）规（会）套路了😕。  </p>
+<p>　　首先，我们用f[i][j]表示前j个数分成i个区间的最大价值和，则有转移方程：<br>$$<br>f[i][j]=max(f[i-1][x]+value[x+1, j])<br>$$<br>　　显然，如果用暴力方法转移，复杂度为O(kn^2)，所以这里我们利用线段树来维护value。  </p>
+<p>　　用辅助数组pos[a[j]]表示a[j]最后一次出现的位置，pre[j]表示a[j]上一次出现位置的下一位。在前i-1个区间已经求出的情况下，我们考虑第i层，假设当前枚举到a[j]，如果从pre[j]到j这段区间任选一个起点x，则[x, j]这段区间都只会有一个a[j]。我们用数组p[y]表示以p[y]为左端点的区间的不同数的个数，那么a[j]的贡献就是令p[pre[j]~j]区间整体+1。若将数组p[y]初始为f[i-1][y-1]，则p[y]最终表示的就是f[i-1][y-1]+value[y, j]，转移时只需要查询p[1~j]的最大值，复杂度优化到O(nklogn)。  </p>
+<p><br></p>
+<hr>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div></pre></td><td class="code"><pre><div class="line">#include&lt;iostream&gt;</div><div class="line">#include&lt;cstring&gt;</div><div class="line">#include&lt;cstdlib&gt;</div><div class="line">#include&lt;cstdio&gt;</div><div class="line">#include&lt;cmath&gt;</div><div class="line">#include&lt;algorithm&gt;</div><div class="line">#define kl (k&lt;&lt;1)</div><div class="line">#define kr ((k&lt;&lt;1)+1)</div><div class="line">#define mid ((l+r)&gt;&gt;1)</div><div class="line">using namespace std;</div><div class="line">const int maxn=35000+10, N=50+10;</div><div class="line"></div><div class="line">int n, k, a[maxn], f[N][maxn];</div><div class="line">int pre[maxn], pos[maxn];</div><div class="line">struct node</div><div class="line">&#123;</div><div class="line">	int ret, flag;</div><div class="line">&#125;tr[maxn&lt;&lt;2];</div><div class="line"></div><div class="line">void Push_down(int k)</div><div class="line">&#123;</div><div class="line">	tr[kl].ret+=tr[k].flag, tr[kl].flag+=tr[k].flag;</div><div class="line">	tr[kr].ret+=tr[k].flag, tr[kr].flag+=tr[k].flag;</div><div class="line">	tr[k].flag=0;</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void Push_up(int k)</div><div class="line">&#123;</div><div class="line">	tr[k].ret=max(tr[kl].ret, tr[kr].ret);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void Build(int x, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	tr[k].flag=0;</div><div class="line">	if(l==r)</div><div class="line">	&#123;</div><div class="line">		tr[k].ret=f[x][l-1];	//注意是l-1</div><div class="line">		return ;</div><div class="line">	&#125;</div><div class="line">	Build(x, kl, l, mid);</div><div class="line">	Build(x, kr, mid+1, r);</div><div class="line">	Push_up(k);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void Update(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr&lt; l || r &lt;ll)	return ;</div><div class="line">	if(ll&lt;=l &amp;&amp; r&lt;=rr)</div><div class="line">	&#123;</div><div class="line">		tr[k].ret++, tr[k].flag++;</div><div class="line">		return ;</div><div class="line">	&#125;</div><div class="line">	Push_down(k);</div><div class="line">	Update(ll, rr, kl, l, mid);</div><div class="line">	Update(ll, rr, kr, mid+1, r);</div><div class="line">	Push_up(k);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">int Query(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr&lt; l || r &lt;ll)	return 0;</div><div class="line">	if(ll&lt;=l &amp;&amp; r&lt;=rr)	return tr[k].ret;</div><div class="line">	int tl=Query(ll, rr, kl, l, mid), tr=Query(ll, rr, kr, mid+1, r);</div><div class="line">	Push_up(k);</div><div class="line">	return max(tl, tr);</div><div class="line">&#125;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">	while(scanf("%d%d", &amp;n, &amp;k)!=EOF)</div><div class="line">	&#123;</div><div class="line">		memset(pre, 0, sizeof pre);</div><div class="line">		memset(pos, 0, sizeof pos);</div><div class="line">		for(int i=1; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			scanf("%d", &amp;a[i]);</div><div class="line">			pre[i]=pos[a[i]]+1;</div><div class="line">			pos[a[i]]=i;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		for(int i=1; i&lt;=k; i++)</div><div class="line">		&#123;</div><div class="line">			Build(i-1);</div><div class="line">			for(int j=1; j&lt;=n; j++)</div><div class="line">			&#123;</div><div class="line">				Update(pre[j], j);</div><div class="line">				f[i][j]=Query(1, j);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		printf("%d\n", f[k][n]);</div><div class="line">	&#125;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><br></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。&lt;a href=&quot;http://codeforces.com/problemset/problem/833/B&quot;&gt; - 原题链接&lt;/a&gt;   &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="CF" scheme="http://thea-r.github.io/tags/CF/"/>
+    
+      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
+    
+      <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF825F String Compression</title>
+    <link href="http://thea-r.github.io/2017/08/08/CF825F-String-Compression/"/>
+    <id>http://thea-r.github.io/2017/08/08/CF825F-String-Compression/</id>
+    <published>2017-08-08T01:59:32.000Z</published>
+    <updated>2017-08-08T02:13:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。<a href="http://codeforces.com/problemset/problem/825/F" target="_blank" rel="external"> - 原题链接</a>   </p>
+<a id="more"></a>  
+<p>　　DP思路很显然，我们使用f[i]表示压缩字符串前i位的最短长度，辅助数组g[i][j]表示压缩s[i, j]的最短长度。<br>$$<br>g[i][j]=<br>\begin{cases}<br>{1+(j-i+1)} &amp; \text {没有循环节}\<br>{c[循环节个数]+循环节长度} &amp; \text {有循环节}\<br>\end{cases}\<br>f[i]=min(f[i], f[j]+g[j+1][i])<br>$$<br>　　这道题最大的收获是学到关于sprintf的用法，将数字i写进足够大的char数组buf中，返回buf的长度：<br>$$<br>c[i]=sprintf(buf, “\%d”, i);<br>$$<br><br></p>
+<hr>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">8000</span>+<span class="number">10</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> n, nx[maxn], c[maxn], f[maxn], g[maxn][maxn];</div><div class="line"><span class="keyword">char</span> s[maxn], buf[maxn];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">KMP</span><span class="params">(<span class="keyword">char</span> *ch, <span class="keyword">int</span> len)</span></span></div><div class="line">&#123;</div><div class="line">	nx[<span class="number">1</span>]=<span class="number">0</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>, j=<span class="number">0</span>; i&lt;=len; i++)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">while</span>(j &amp;&amp; ch[i]!=ch[j+<span class="number">1</span>])	j=nx[j];</div><div class="line">		<span class="keyword">if</span>(ch[i]==ch[j+<span class="number">1</span>])	++j;</div><div class="line">		nx[i]=j;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> ;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%s"</span>, s+<span class="number">1</span>)!=EOF)</div><div class="line">	&#123;</div><div class="line">		n=<span class="built_in">strlen</span>(s+<span class="number">1</span>);</div><div class="line"></div><div class="line">		<span class="built_in">memset</span>(g, <span class="number">0</span>, <span class="keyword">sizeof</span> g);</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			c[i]=<span class="built_in">sprintf</span>(buf, <span class="string">"%d"</span>, i);</div><div class="line">			f[i]=i+<span class="number">1</span>;	<span class="comment">//每个字符串T都能压缩为1T</span></div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			KMP(s+i<span class="number">-1</span>, n-i+<span class="number">1</span>);	<span class="comment">//传进去的是s+i-1，保证函数中合法字符串从下标1开始计数</span></div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=n-i+<span class="number">1</span>; j++)</div><div class="line">			&#123;</div><div class="line">				<span class="keyword">int</span> len=j-nx[j];</div><div class="line">				<span class="keyword">if</span>(j%len==<span class="number">0</span>)	g[i][i+j<span class="number">-1</span>]=c[j/len]+len;	<span class="comment">//循环次数+循环节长度</span></div><div class="line">				<span class="keyword">else</span> g[i][i+j<span class="number">-1</span>]=<span class="number">1</span>+j;	<span class="comment">//不循环</span></div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;i; j++)</div><div class="line">				f[i]=min(f[i], f[j]+g[j+<span class="number">1</span>][i]);</div><div class="line">		</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, f[n]);</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><br></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　题意：把一个字符串压缩成CiSi格式（例：hhhhhhh压缩为7h），问压缩后最短长度是多少。&lt;a href=&quot;http://codeforces.com/problemset/problem/825/F&quot;&gt; - 原题链接&lt;/a&gt;   &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="CF" scheme="http://thea-r.github.io/tags/CF/"/>
+    
+      <category term="KMP" scheme="http://thea-r.github.io/tags/KMP/"/>
+    
+      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2017暑假集训记录（二）</title>
+    <link href="http://thea-r.github.io/2017/08/08/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>http://thea-r.github.io/2017/08/08/2017暑假集训记录（二）/</id>
+    <published>2017-08-08T01:53:33.000Z</published>
+    <updated>2017-08-08T01:54:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　暑假集训个人日常（阶段二）。  </p>
+<a id="more"></a>  
+<p>　　  </p>
+<hr>
+<p>　　  </p>
+<h1 id="day1-08-07"><a href="#day1-08-07" class="headerlink" title="day1 08.07"></a>day1 08.07</h1><h1 id="day2-08-08"><a href="#day2-08-08" class="headerlink" title="day2 08.08"></a>day2 08.08</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　暑假集训个人日常（阶段二）。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM训练记录" scheme="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="record" scheme="http://thea-r.github.io/tags/record/"/>
+    
+  </entry>
   
   <entry>
     <title>HDU6024 Innumerable Ancestors</title>
@@ -54,13 +148,13 @@
   </entry>
   
   <entry>
-    <title>2017暑假集训记录</title>
-    <link href="http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95/"/>
-    <id>http://thea-r.github.io/2017/06/25/2017暑假集训记录/</id>
+    <title>2017暑假集训记录（一）</title>
+    <link href="http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://thea-r.github.io/2017/06/25/2017暑假集训记录（一）/</id>
     <published>2017-06-25T11:05:33.000Z</published>
-    <updated>2017-08-08T01:40:58.000Z</updated>
+    <updated>2017-08-08T01:53:50.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　暑假集训个人日常。  </p>
+    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　暑假集训个人日常（阶段一）。  </p>
 <a id="more"></a>  
 <p>　　  </p>
 <hr>
@@ -143,7 +237,7 @@
 <h1 id="day7-06-30"><a href="#day7-06-30" class="headerlink" title="day7 06.30"></a>day7 06.30</h1><ol>
 <li><h3 id="TeamTraining：2010-Asia-Chengdu-Regional-Contest-—-rank-2"><a href="#TeamTraining：2010-Asia-Chengdu-Regional-Contest-—-rank-2" class="headerlink" title="TeamTraining：2010 Asia Chengdu Regional Contest — rank 2"></a><a href="http://icpc.njust.edu.cn/Contest/1102/" target="_blank" rel="external">TeamTraining：2010 Asia Chengdu Regional Contest — rank 2</a></h3><p><del>A    Balanced Number（数位DP）</del><br>B    Battle over Cities（树链剖分+LCA）<br>C    Binary Number（模拟）<br>D    Detector Placement（计算几何）<br><del>E    Double Maze（搜索+模拟）</del><br>F    Error Curves（三分）<br><del>G    Go Deeper（2-SAT）</del><br>H    Jenga（。。。）<br>I    Rescue（分治）<br><del>J    Similarity（最佳匹配）</del><br>K    Snooker Referee（二叉树）</p>
 </li>
-<li><h3 id="Summarize-6"><a href="#Summarize-6" class="headerlink" title="Summarize"></a>Summarize</h3><p>　　开了一道数位dp，写了半天，不过样例… 开了一道2-SAT，写了半天，wa… 然后莫名其妙天神就把我的A调出样例了？？？然后莫名其妙他叫了一发就1A了？？？队里有DP大佬为什么还要让我写DP自取其辱啊（摔桌）。后来发现2-SAT是跪在初始化，所以一定要记住二分的题每次都要初始化。看前两个队都过了J题，Messy看了题目想想想了一会儿就说这是个网络流的题，给我讲了一下神奇的构图然后我上去十分钟敲了一个最佳匹配的板子居然就过了… 对比一下前两题我浪费的时间，就觉得很梦幻，简直怀疑人生。  </p>
+<li><h3 id="Summarize-6"><a href="#Summarize-6" class="headerlink" title="Summarize"></a>Summarize</h3><p>　　开了一道数位dp，写了半天，不过样例… 开了一道2-SAT，写了半天，wa… 然后莫名其妙天神就把我的A调出样例了？？？然后莫名其妙他交了一发就1A了？？？队里有DP大佬为什么还要让我写DP自取其辱啊（摔桌）。后来发现2-SAT是跪在初始化，所以一定要记住二分的题每次都要初始化。看前两个队都过了J题，Messy看了题目想想想了一会儿就说这是个网络流的题，给我讲了一下神奇的构图然后我上去十分钟敲了一个最佳匹配的板子居然就过了… 对比一下前两题我浪费的时间，就觉得很梦幻，简直怀疑人生。  </p>
 </li>
 <li><h3 id="Chaos-6"><a href="#Chaos-6" class="headerlink" title="Chaos"></a>Chaos</h3><p>　　如果我说我是在7月4号补了6月30号的Chaos，那大家一定会原谅我对于那一天所有事情的遗忘（还不是你拖延症）。  </p>
 </li>
@@ -168,7 +262,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;　　暑假集训个人日常。  &lt;/p&gt;
+      &lt;p&gt;　　暑假集训个人日常（阶段一）。  &lt;/p&gt;
     
     </summary>
     
@@ -213,11 +307,11 @@
       <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
+    
       <category term="2013多校" scheme="http://thea-r.github.io/tags/2013%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
-    
-      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
     
       <category term="计算几何" scheme="http://thea-r.github.io/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
@@ -265,11 +359,11 @@
       <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
+    
       <category term="2013多校" scheme="http://thea-r.github.io/tags/2013%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
-    
-      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
     
   </entry>
   
@@ -404,11 +498,11 @@
       <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
       <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
-    
-      <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
       <category term="树状数组" scheme="http://thea-r.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
@@ -559,11 +653,11 @@
       <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
+      <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
       <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
-    
-      <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   

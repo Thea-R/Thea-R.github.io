@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。 - 原题链接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CF833B The Bakery">
+<meta property="og:url" content="http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/index.html">
+<meta property="og:site_name" content="然而，然而">
+<meta property="og:description" content="题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。 - 原题链接">
+<meta property="og:updated_time" content="2017-08-08T02:51:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CF833B The Bakery">
+<meta name="twitter:description" content="题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。 - 原题链接">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon.ico" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+          
+        
+    
+    <!-- title -->
+    <title>CF833B The Bakery</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/links">Blogrolls</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2017/08/08/CF825F-String-Compression/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&text=CF833B The Bakery"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&is_video=false&description=CF833B The Bakery"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CF833B The Bakery&body=Check out this article: http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&name=CF833B The Bakery&description=&lt;p&gt;　　题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。&lt;a href=&quot;http://codeforces.com/problemset/problem/833/B&quot;&gt; - 原题链接&lt;/a&gt;   &lt;/p&gt;"><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        CF833B The Bakery
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">然而，然而</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-08-08T01:59:55.000Z" itemprop="datePublished">2017-08-08</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/CF/">CF</a>, <a class="tag-link" href="/tags/DP/">DP</a>, <a class="tag-link" href="/tags/线段树/">线段树</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <script src="/assets/js/DPlayer.min.js"> </script><p>　　题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。<a href="http://codeforces.com/problemset/problem/833/B" target="_blank" rel="external"> - 原题链接</a>   </p>
+<a id="more"></a>  
+<p>　　神奇的线段树… 先碰到多校那场dirt ratio再来做的这道DP，原来这已经是个常（不）规（会）套路了😕。  </p>
+<p>　　首先，我们用f[i][j]表示前j个数分成i个区间的最大价值和，则有转移方程：<br>$$<br>f[i][j]=max(f[i-1][x]+value[x+1, j])<br>$$<br>　　显然，如果用暴力方法转移，复杂度为O(kn^2)，所以这里我们利用线段树来维护value。  </p>
+<p>　　用辅助数组pos[a[j]]表示a[j]最后一次出现的位置，pre[j]表示a[j]上一次出现位置的下一位。在前i-1个区间已经求出的情况下，我们考虑第i层，假设当前枚举到a[j]，如果从pre[j]到j这段区间任选一个起点x，则[x, j]这段区间都只会有一个a[j]。我们用数组p[y]表示以p[y]为左端点的区间的不同数的个数，那么a[j]的贡献就是令p[pre[j]~j]区间整体+1。若将数组p[y]初始为f[i-1][y-1]，则p[y]最终表示的就是f[i-1][y-1]+value[y, j]，转移时只需要查询p[1~j]的最大值，复杂度优化到O(nklogn)。  </p>
+<p><br></p>
+<hr>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div></pre></td><td class="code"><pre><div class="line">#include&lt;iostream&gt;</div><div class="line">#include&lt;cstring&gt;</div><div class="line">#include&lt;cstdlib&gt;</div><div class="line">#include&lt;cstdio&gt;</div><div class="line">#include&lt;cmath&gt;</div><div class="line">#include&lt;algorithm&gt;</div><div class="line">#define kl (k&lt;&lt;1)</div><div class="line">#define kr ((k&lt;&lt;1)+1)</div><div class="line">#define mid ((l+r)&gt;&gt;1)</div><div class="line">using namespace std;</div><div class="line">const int maxn=35000+10, N=50+10;</div><div class="line"></div><div class="line">int n, k, a[maxn], f[N][maxn];</div><div class="line">int pre[maxn], pos[maxn];</div><div class="line">struct node</div><div class="line">&#123;</div><div class="line">	int ret, flag;</div><div class="line">&#125;tr[maxn&lt;&lt;2];</div><div class="line"></div><div class="line">void Push_down(int k)</div><div class="line">&#123;</div><div class="line">	tr[kl].ret+=tr[k].flag, tr[kl].flag+=tr[k].flag;</div><div class="line">	tr[kr].ret+=tr[k].flag, tr[kr].flag+=tr[k].flag;</div><div class="line">	tr[k].flag=0;</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void Push_up(int k)</div><div class="line">&#123;</div><div class="line">	tr[k].ret=max(tr[kl].ret, tr[kr].ret);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void Build(int x, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	tr[k].flag=0;</div><div class="line">	if(l==r)</div><div class="line">	&#123;</div><div class="line">		tr[k].ret=f[x][l-1];	//注意是l-1</div><div class="line">		return ;</div><div class="line">	&#125;</div><div class="line">	Build(x, kl, l, mid);</div><div class="line">	Build(x, kr, mid+1, r);</div><div class="line">	Push_up(k);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void Update(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr&lt; l || r &lt;ll)	return ;</div><div class="line">	if(ll&lt;=l &amp;&amp; r&lt;=rr)</div><div class="line">	&#123;</div><div class="line">		tr[k].ret++, tr[k].flag++;</div><div class="line">		return ;</div><div class="line">	&#125;</div><div class="line">	Push_down(k);</div><div class="line">	Update(ll, rr, kl, l, mid);</div><div class="line">	Update(ll, rr, kr, mid+1, r);</div><div class="line">	Push_up(k);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line"></div><div class="line">int Query(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr&lt; l || r &lt;ll)	return 0;</div><div class="line">	if(ll&lt;=l &amp;&amp; r&lt;=rr)	return tr[k].ret;</div><div class="line">	int tl=Query(ll, rr, kl, l, mid), tr=Query(ll, rr, kr, mid+1, r);</div><div class="line">	Push_up(k);</div><div class="line">	return max(tl, tr);</div><div class="line">&#125;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">	while(scanf("%d%d", &amp;n, &amp;k)!=EOF)</div><div class="line">	&#123;</div><div class="line">		memset(pre, 0, sizeof pre);</div><div class="line">		memset(pos, 0, sizeof pos);</div><div class="line">		for(int i=1; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			scanf("%d", &amp;a[i]);</div><div class="line">			pre[i]=pos[a[i]]+1;</div><div class="line">			pos[a[i]]=i;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		for(int i=1; i&lt;=k; i++)</div><div class="line">		&#123;</div><div class="line">			Build(i-1);</div><div class="line">			for(int j=1; j&lt;=n; j++)</div><div class="line">			&#123;</div><div class="line">				Update(pre[j], j);</div><div class="line">				f[i][j]=Query(1, j);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		printf("%d\n", f[k][n]);</div><div class="line">	&#125;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><br></p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/links">Blogrolls</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&text=CF833B The Bakery"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&is_video=false&description=CF833B The Bakery"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CF833B The Bakery&body=Check out this article: http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&title=CF833B The Bakery"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/&name=CF833B The Bakery&description=&lt;p&gt;　　题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。&lt;a href=&quot;http://codeforces.com/problemset/problem/833/B&quot;&gt; - 原题链接&lt;/a&gt;   &lt;/p&gt;"><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Thea-R
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/links">Blogrolls</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
