@@ -434,6 +434,16 @@
 *:after {
   box-sizing: border-box;
 }
+.hider_title {
+  font-family: "Microsoft Yahei";
+  cursor: pointer;
+}
+.close:after {
+  content: "▼";
+}
+.open:after {
+  content: "▲";
+}
 html {
   height: 100%;
   border-top: 2px solid #c9cacc;
