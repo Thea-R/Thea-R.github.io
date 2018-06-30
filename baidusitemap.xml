@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://thea-r.github.io/2018/06/30/2018%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2018-06-30T09:20:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>2018暑假集训记录（一）</title>
+        <pubTime>2018-06-30T08:44:14.000Z</pubTime>
+        
+        <tag>record</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://thea-r.github.io/2017/08/09/HDU6086-Rikka-with-String/</loc>
     <lastmod>2017-08-09T02:01:01.000Z</lastmod>
     <data>
@@ -131,9 +151,9 @@
         
         <tag>DP</tag>
          
-        <tag>HDU</tag>
-         
         <tag>2013多校</tag>
+         
+        <tag>HDU</tag>
          
         <tag>计算几何</tag>
          
@@ -272,9 +292,9 @@
         
         <tag>DP</tag>
          
-        <tag>HDU</tag>
-         
         <tag>2013多校</tag>
+         
+        <tag>HDU</tag>
          
          
            
@@ -294,9 +314,9 @@
         <title>HDU5860 Death Sequence</title>
         <pubTime>2016-08-19T06:17:11.000Z</pubTime>
         
-        <tag>2016多校</tag>
-         
         <tag>HDU</tag>
+         
+        <tag>2016多校</tag>
          
         <tag>递推</tag>
          
@@ -320,9 +340,9 @@
         
         <tag>线段树</tag>
          
-        <tag>2016多校</tag>
-         
         <tag>HDU</tag>
+         
+        <tag>2016多校</tag>
          
          
            
@@ -342,9 +362,9 @@
         <title>HDU5727 Necklace</title>
         <pubTime>2016-08-15T07:40:27.000Z</pubTime>
         
-        <tag>2016多校</tag>
-         
         <tag>HDU</tag>
+         
+        <tag>2016多校</tag>
          
         <tag>搜索</tag>
          
@@ -368,9 +388,9 @@
         
         <tag>线段树</tag>
          
-        <tag>2016多校</tag>
-         
         <tag>HDU</tag>
+         
+        <tag>2016多校</tag>
          
         <tag>树状数组</tag>
          
@@ -464,9 +484,9 @@
         <title>HDU5862 Counting Intersections</title>
         <pubTime>2016-08-19T08:04:17.000Z</pubTime>
         
-        <tag>2016多校</tag>
-         
         <tag>HDU</tag>
+         
+        <tag>2016多校</tag>
          
         <tag>树状数组</tag>
          

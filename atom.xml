@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://thea-r.github.io/"/>
-  <updated>2017-08-09T02:01:01.000Z</updated>
+  <updated>2018-06-30T09:20:03.000Z</updated>
   <id>http://thea-r.github.io/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018暑假集训记录（一）</title>
+    <link href="http://thea-r.github.io/2018/06/30/2018%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://thea-r.github.io/2018/06/30/2018暑假集训记录（一）/</id>
+    <published>2018-06-30T08:44:14.000Z</published>
+    <updated>2018-06-30T09:20:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　暑假集训个人日常（好熟悉的开场🙊）。  </p>
+<a id="more"></a>  
+<p>　　  </p>
+<hr>
+<p>　　  </p>
+<h1 id="day1-06-30"><a href="#day1-06-30" class="headerlink" title="day1 06.30"></a>day1 06.30</h1><ol>
+<li><h3 id="Contest：The-2015-ACM-ICPC-ChangChun-Regional-Contest"><a href="#Contest：The-2015-ACM-ICPC-ChangChun-Regional-Contest" class="headerlink" title="Contest：The 2015 ACM-ICPC ChangChun Regional Contest"></a><a href="http://icpc.njust.edu.cn/Contest/6259/" target="_blank" rel="external">Contest：The 2015 ACM-ICPC ChangChun Regional Contest</a></h3><ul>
+<li>[x] <del><strong>A    Too Rich（贪心）</strong></del></li>
+<li>[ ] B    Count a * b</li>
+<li>[ ] C    Play a game</li>
+<li>[ ] D    Pipes selection</li>
+<li>[ ] E    Rebuild</li>
+<li>[x] F    Almost Sorted Array（递推）</li>
+<li>[x] G    Dancing Stars on Me（计算几何凸包）</li>
+<li>[x] <strong><del>H    Partial Tree（完全背包）</del></strong></li>
+<li>[ ] I    Chess Puzzle</li>
+<li>[x] J    Chip Factory（暴力／01Trie树）</li>
+<li>[ ] K    Maximum Spanning Forest</li>
+<li>[x] L    House Building（简单计算）</li>
+<li>[ ] M    Security Corporation</li>
+</ul>
+</li>
+<li><h3 id="Chaos"><a href="#Chaos" class="headerlink" title="Chaos"></a>Chaos</h3><p>　　G读完题目不看样例于是就理解错了… J读完题目算算复杂度不敢莽于是隔壁就A了… F边界不好好处理于是1A就没了… 去年day4的A题我写了个恶心的优先队列然后今天写了个优美的线段树还在沾沾自喜然后发现其实只要扫一遍预处理就over了… 滚粗👋。</p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　暑假集训个人日常（好熟悉的开场🙊）。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM训练记录" scheme="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="record" scheme="http://thea-r.github.io/tags/record/"/>
+    
+  </entry>
   
   <entry>
     <title>HDU6086 Rikka with String</title>
@@ -484,9 +531,9 @@
     
       <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
     
-      <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
-    
       <category term="2013多校" scheme="http://thea-r.github.io/tags/2013%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
       <category term="计算几何" scheme="http://thea-r.github.io/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
@@ -536,9 +583,9 @@
     
       <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
     
-      <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
-    
       <category term="2013多校" scheme="http://thea-r.github.io/tags/2013%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
   </entry>
   
@@ -639,9 +686,9 @@
       <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
-    
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
+    
+      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="树状数组" scheme="http://thea-r.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
@@ -675,9 +722,9 @@
     
       <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
-      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
-    
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
+    
+      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="树状数组" scheme="http://thea-r.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
@@ -712,9 +759,9 @@
       <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
-    
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
+    
+      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="递推" scheme="http://thea-r.github.io/tags/%E9%80%92%E6%8E%A8/"/>
     
@@ -787,52 +834,11 @@
       <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
     
     
-      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
-    
       <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
+    
+      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="搜索" scheme="http://thea-r.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HDU5828 Rikka with Sequence</title>
-    <link href="http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/"/>
-    <id>http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/</id>
-    <published>2016-08-13T14:46:36.000Z</published>
-    <updated>2017-06-24T09:40:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>　　2016 Multi-University Training Contest 8  </p>
-<p>　　题意：n元素序列，给定m种操作——区间加法，区间开方，区间求和。对于每个求和操作，输出结果。<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5828" target="_blank" rel="external"> - 原题链接</a><br><a id="more"></a>  </p>
-<p>　　很显然的线段树，然而直接思路也很显然会T。<br>　　赛时一直在纠结线段树应该维护什么东西，若维护操作序列，那只能朴素求和；若维护区间和，那sqrt要落实到所有叶子结点，代价太大。  </p>
-<p>　　后来学习了官方题解和网上的博客，其实主要性质是，开方操作使元素减小非常快，不断开方后区间内元素最终会趋近相同，于是可以用到以下两种优化：</p>
-<ul>
-<li>若区间元素相同，转化为区间加法，tmp+=(sqrt(val)-val)</li>
-<li>若区间元素极差为1且开方后极差仍为1，转化为区间加法，tmp+=(sqrt(min)-min)</li>
-</ul>
-<p>　　大概是很多细节没处理好，套上读入优化也只能到2839MS，过得很勉强＝ ＝  </p>
-<p>　　敲完这题想到了多校1的那道GCD，当时我用极端数据a[i]=2^i推翻了自己的算法，却没有注意到在a[i]的限制范围内不可能出现持续的极端数据。两道题其实是用开方和对数将题面的大范围缩小到了可操作的小范围内，以后遇到类似问题要有这样的意识。<br>　　（谁能告诉我这篇代码为什么不能高亮😭）  </p>
-<p><br></p>
-<hr>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div></pre></td><td class="code"><pre><div class="line">#include&lt;iostream&gt;</div><div class="line">#include&lt;cstring&gt;</div><div class="line">#include&lt;cstdlib&gt;</div><div class="line">#include&lt;cstdio&gt;</div><div class="line">#include&lt;cmath&gt;</div><div class="line">#include&lt;algorithm&gt;</div><div class="line">#define kl (k&lt;&lt;1)</div><div class="line">#define kr ((k&lt;&lt;1)+1)</div><div class="line">#define mid ((l+r)&gt;&gt;1)</div><div class="line">using namespace std;</div><div class="line">typedef long long lint;</div><div class="line">const int maxn=1e5 + 10;</div><div class="line">  </div><div class="line">int T, n, m;</div><div class="line">struct node</div><div class="line">&#123;</div><div class="line">	lint mn, mx, sum, tmp;</div><div class="line">	node(lint _mn=0, lint _mx=0, lint s=0, lint t=0) &#123; mn=_mn, mx=_mx, sum=s, tmp=t; &#125;</div><div class="line">&#125;tr[maxn&lt;&lt;2];</div><div class="line">  </div><div class="line">void Get_lint(lint &amp;num, char c=0)</div><div class="line">&#123;</div><div class="line">	for(c=getchar(); c&lt;'0'||c&gt;'9'; c=getchar());</div><div class="line">	for(num=c-48; c=getchar(), c&gt;='0'&amp;&amp;c&lt;='9'; num=num*10+c-48);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">  </div><div class="line">void Build(int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	tr[k].mn=tr[k].mx=tr[k].sum=tr[k].tmp=0;</div><div class="line">	if(l==r)	return ;</div><div class="line">	Build(kl, l, mid);</div><div class="line">	Build(kr, mid+1, r);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">  </div><div class="line">void Push_down(int k, int l, int r)</div><div class="line">&#123;</div><div class="line">	tr[kl].mn+=tr[k].tmp, tr[kl].mx+=tr[k].tmp, tr[kl].sum+=(mid-l+1)*tr[k].tmp, tr[kl].tmp+=tr[k].tmp;</div><div class="line">	tr[kr].mn+=tr[k].tmp, tr[kr].mx+=tr[k].tmp, tr[kr].sum+=(r-mid)*tr[k].tmp, tr[kr].tmp+=tr[k].tmp;</div><div class="line">	tr[k].tmp=0;</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">  </div><div class="line">void Push_up(int k, int l, int r)</div><div class="line">&#123;</div><div class="line">	tr[k].mn=min(tr[kl].mn, tr[kr].mn);</div><div class="line">	tr[k].mx=max(tr[kl].mx, tr[kr].mx);</div><div class="line">	tr[k].sum=tr[kl].sum+tr[kr].sum;</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">  </div><div class="line">void Insert(int ll, int rr, lint x, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr &lt;l||r&lt; ll)	return ;</div><div class="line">	if(ll&lt;=l&amp;&amp;r&lt;=rr)</div><div class="line">	&#123;</div><div class="line">		tr[k].mn+=x, tr[k].mx+=x, tr[k].sum+=(r-l+1)*x, tr[k].tmp+=x;</div><div class="line">		return ;</div><div class="line">	&#125;</div><div class="line">	if(tr[k].tmp)	Push_down(k, l, r);</div><div class="line">	Insert(ll, rr, x, kl, l, mid);</div><div class="line">	Insert(ll, rr, x, kr, mid+1, r);</div><div class="line">	Push_up(k, l, r);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">  </div><div class="line">void Modify(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr &lt;l||r&lt; ll)	return ;</div><div class="line">	if(ll&lt;=l&amp;&amp;r&lt;=rr)</div><div class="line">	&#123;</div><div class="line">		if(tr[k].mn==tr[k].mx)</div><div class="line">		&#123;</div><div class="line">			lint tmp=sqrt(tr[k].mn);</div><div class="line">			tr[k].tmp+=tmp-tr[k].mn, tr[k].sum=(r-l+1)*tmp, tr[k].mn=tr[k].mx=tmp;</div><div class="line">			return ;</div><div class="line">		&#125;</div><div class="line">		else if(tr[k].mn+1==tr[k].mx)</div><div class="line">		&#123;</div><div class="line">			lint tp1=sqrt(tr[k].mn), tp2=sqrt(tr[k].mx);</div><div class="line">			if(tp1+1==tp2)</div><div class="line">			&#123;</div><div class="line">				tr[k].tmp+=tp1-tr[k].mn, tr[k].sum+=(r-l+1)*(tp1-tr[k].mn), tr[k].mn=tp1, tr[k].mx=tp2;</div><div class="line">				return ;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	if(tr[k].tmp)	Push_down(k, l, r);</div><div class="line">	Modify(ll, rr, kl, l, mid);</div><div class="line">	Modify(ll, rr, kr, mid+1, r);</div><div class="line">	Push_up(k, l, r);</div><div class="line">	return ;</div><div class="line">&#125;</div><div class="line">  </div><div class="line">lint Query(int ll, int rr, int k=1, int l=1, int r=n)</div><div class="line">&#123;</div><div class="line">	if(rr &lt;l||r&lt; ll)	return 0;</div><div class="line">	if(ll&lt;=l&amp;&amp;r&lt;=rr)	return tr[k].sum;</div><div class="line">	if(tr[k].tmp)	Push_down(k, l, r);</div><div class="line">	return Query(ll, rr, kl, l, mid)+Query(ll, rr, kr, mid+1, r);</div><div class="line">&#125;</div><div class="line">  </div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">	scanf("%d", &amp;T);</div><div class="line">	while(T--)</div><div class="line">	&#123;</div><div class="line">		scanf("%d%d", &amp;n, &amp;m);</div><div class="line">		Build();</div><div class="line">		  </div><div class="line">		lint d, l, r, x;</div><div class="line">		for(int i=1; i&lt;=n; i++)</div><div class="line">		&#123;</div><div class="line">			Get_lint(x);</div><div class="line">			Insert(i, i, x);</div><div class="line">		&#125;</div><div class="line">		  </div><div class="line">		for(int i=1; i&lt;=m; i++)</div><div class="line">		&#123;</div><div class="line">			Get_lint(d), Get_lint(l), Get_lint(r);</div><div class="line">			if(d==1)</div><div class="line">			&#123;</div><div class="line">				Get_lint(x);</div><div class="line">				Insert(l, r, x);</div><div class="line">			&#125;</div><div class="line">			else if(d==2)	Modify(l, r);</div><div class="line">			else printf("%lld\n", Query(l, r));</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><br></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　2016 Multi-University Training Contest 8  &lt;/p&gt;
-&lt;p&gt;　　题意：n元素序列，给定m种操作——区间加法，区间开方，区间求和。对于每个求和操作，输出结果。&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=5828&quot;&gt; - 原题链接&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="ACM题解" scheme="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-      <category term="2016多校" scheme="http://thea-r.github.io/tags/2016%E5%A4%9A%E6%A0%A1/"/>
-    
-      <category term="HDU" scheme="http://thea-r.github.io/tags/HDU/"/>
     
   </entry>
   
