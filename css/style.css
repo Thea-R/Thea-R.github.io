@@ -437,6 +437,7 @@
 .hider_title {
   font-family: "Microsoft Yahei";
   cursor: pointer;
+  color: #708090;
 }
 .close:after {
   content: "▼";
