@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://thea-r.github.io/"/>
-  <updated>2018-07-01T11:08:13.000Z</updated>
+  <updated>2018-07-01T11:16:00.000Z</updated>
   <id>http://thea-r.github.io/</id>
   
   <author>
@@ -20,31 +20,26 @@
     <link href="http://thea-r.github.io/2018/07/01/%E5%A6%82%E4%BD%95%E5%9C%A8Hexo%E4%B8%AD%E6%B8%B2%E6%9F%93%E5%85%AC%E5%BC%8F/"/>
     <id>http://thea-r.github.io/2018/07/01/如何在Hexo中渲染公式/</id>
     <published>2018-07-01T10:47:36.000Z</published>
-    <updated>2018-07-01T11:08:13.000Z</updated>
+    <updated>2018-07-01T11:16:00.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>​    优化公式渲染，本文基于Cactus主题修改。</p>
 <a id="more"></a>  
 <p>　　  </p>
 <hr>
-<p>　　  常用的Markdown编辑器都会集成 Mathjax ，用来渲染文档中的类Latex格式书写的数学公式。而Hexo默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签，比如在markdown语法中，下划线’_’代表斜体，会被渲染引擎处理为<em>标签。类似的语义冲突的符号还包括’*’, ‘{‘, ‘}’, ‘\’等。</em></p>
+<p>　　  常用的Markdown编辑器都会集成 Mathjax ，用来渲染文档中的类Latex格式书写的数学公式。而Hexo默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签，比如在markdown语法中，下划线$_$代表斜体，会被渲染引擎处理为$<em>$标签。类似的语义冲突的符号还包括$*, \{, \}, \\$等。</em></p>
 <p>　　  解决：更换Hexo的markdown渲染引擎， hexo-renderer-kramed 引擎是在默认的渲染引擎 hexo-renderer-marked 的基础上修改了一些bug，两者比较接近，也比较轻量级。</p>
 <p>　　  </p>
-<h2 id="安装-Kramed-和-Mathjax"><a href="#安装-Kramed-和-Mathjax" class="headerlink" title="安装 Kramed 和 Mathjax"></a>安装 Kramed 和 Mathjax</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-renderer-marked --save</div><div class="line">npm install hexo-renderer-kramed --save</div><div class="line"></div><div class="line">npm uninstall hexo-math --save</div><div class="line">npm install hexo-renderer-mathjax --save</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="更新-Mathjax-链接"><a href="#更新-Mathjax-链接" class="headerlink" title="更新 Mathjax 链接"></a>更新 Mathjax 链接</h2><p>在 node_modules/hexo-renderer-mathjax/mathjax.html 中修改代码：</p>
+<h1 id="安装-Kramed-和-Mathjax"><a href="#安装-Kramed-和-Mathjax" class="headerlink" title="安装 Kramed 和 Mathjax"></a>安装 Kramed 和 Mathjax</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-renderer-marked --save</div><div class="line">npm install hexo-renderer-kramed --save</div><div class="line"></div><div class="line">npm uninstall hexo-math --save</div><div class="line">npm install hexo-renderer-mathjax --save</div></pre></td></tr></table></figure>
+<h1 id="更新-Mathjax-链接"><a href="#更新-Mathjax-链接" class="headerlink" title="更新 Mathjax 链接"></a>更新 Mathjax 链接</h1><p>在 node_modules/hexo-renderer-mathjax/mathjax.html 中修改代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--</div><div class="line">&lt;script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;</div><div class="line">--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="更新转义规则"><a href="#更新转义规则" class="headerlink" title="更新转义规则"></a>更新转义规则</h2><p>在 node_modules/kramed/lib/rules/inline.js 中修改代码：</p>
+<h1 id="更新转义规则"><a href="#更新转义规则" class="headerlink" title="更新转义规则"></a>更新转义规则</h1><p>在 node_modules/kramed/lib/rules/inline.js 中修改代码：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span></div><div class="line"><span class="built_in">escape</span>: <span class="regexp">/^\\([`*\[\]()# +\-.!_&gt;])/</span>,</div><div class="line"></div><div class="line"><span class="comment">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span></div><div class="line">em: <span class="regexp">/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span>,</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="开启-Mathjax"><a href="#开启-Mathjax" class="headerlink" title="开启 Mathjax"></a>开启 Mathjax</h2><p>在 _config.yml 中添加代码：</p>
+<h1 id="开启-Mathjax"><a href="#开启-Mathjax" class="headerlink" title="开启 Mathjax"></a>开启 Mathjax</h1><p>在 _config.yml 中添加代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mathjax:</div><div class="line">  enable: true</div></pre></td></tr></table></figure>
 <p>在文章中选择性开启 Mathjax：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 如何在Hexo中渲染公式</div><div class="line">date: 2018-07-01 18:47:36</div><div class="line">categories: 环境搭建</div><div class="line">tags: </div><div class="line"> - Doc</div><div class="line">mathjax: true</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="部署使用"><a href="#部署使用" class="headerlink" title="部署使用"></a>部署使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/u014630987/article/details/78670258" target="_blank" rel="external">https://blog.csdn.net/u014630987/article/details/78670258</a></p>
+<h1 id="部署使用"><a href="#部署使用" class="headerlink" title="部署使用"></a>部署使用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://blog.csdn.net/u014630987/article/details/78670258" target="_blank" rel="external">https://blog.csdn.net/u014630987/article/details/78670258</a></p>
 <p><a href="https://www.jianshu.com/p/7ab21c7f0674" target="_blank" rel="external">https://www.jianshu.com/p/7ab21c7f0674</a></p>
 ]]></content>
     
@@ -66,32 +61,27 @@
     <link href="http://thea-r.github.io/2018/07/01/%E5%A6%82%E4%BD%95%E5%9C%A8Hexo%E4%B8%AD%E6%8A%98%E5%8F%A0%E4%BB%A3%E7%A0%81/"/>
     <id>http://thea-r.github.io/2018/07/01/如何在Hexo中折叠代码/</id>
     <published>2018-07-01T10:23:42.000Z</published>
-    <updated>2018-07-01T11:08:56.000Z</updated>
+    <updated>2018-07-01T11:16:45.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>​    添加代码折叠功能，本文基于Cactus主题修改。</p>
 <a id="more"></a>  
 <p>　　  </p>
 <hr>
 <p>　　  </p>
-<h2 id="添加折叠js"><a href="#添加折叠js" class="headerlink" title="添加折叠js"></a>添加折叠js</h2><p>在 themes/cactus/source/js/main.js 中添加代码：</p>
+<h1 id="添加折叠js"><a href="#添加折叠js" class="headerlink" title="添加折叠js"></a>添加折叠js</h1><p>在 themes/cactus/source/js/main.js 中添加代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    $(<span class="built_in">document</span>).on(<span class="string">'click'</span>, <span class="string">'.fold_hider'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        $(<span class="string">'&gt;.fold'</span>, <span class="keyword">this</span>.parentNode).slideToggle();</div><div class="line">        $(<span class="string">'&gt;:first'</span>, <span class="keyword">this</span>).toggleClass(<span class="string">'open'</span>);</div><div class="line">    &#125;);</div><div class="line">    <span class="comment">//默认情况下折叠</span></div><div class="line">    $(<span class="string">"div.fold"</span>).css(<span class="string">"display"</span>,<span class="string">"none"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="自定义内建标签"><a href="#自定义内建标签" class="headerlink" title="自定义内建标签"></a>自定义内建标签</h2><p>在 themes/cactus/scripts 下添加文件tags.js，代码：</p>
+<h1 id="自定义内建标签"><a href="#自定义内建标签" class="headerlink" title="自定义内建标签"></a>自定义内建标签</h1><p>在 themes/cactus/scripts 下添加文件tags.js，代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</div><div class="line">  @haohuawu</div><div class="line">  修复 Nunjucks 的 tag 里写 ```代码块```，最终都会渲染成 undefined 的问题</div><div class="line">  https://github.com/hexojs/hexo/issues/2400</div><div class="line">*/</span></div><div class="line"><span class="keyword">const</span> rEscapeContent = <span class="regexp">/&lt;escape(?:[^&gt;]*)&gt;([\s\S]*?)&lt;\/escape&gt;/g</span>;</div><div class="line"><span class="keyword">const</span> placeholder = <span class="string">'\uFFFD'</span>;</div><div class="line"><span class="keyword">const</span> rPlaceholder = <span class="regexp">/(?:&lt;|&amp;lt;)\!--\uFFFD(\d+)--(?:&gt;|&amp;gt;)/g</span>;</div><div class="line"><span class="keyword">const</span> cache = [];</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">escapeContent</span>(<span class="params">str</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;!--'</span> + placeholder + (cache.push(str) - <span class="number">1</span>) + <span class="string">'--&gt;'</span>;</div><div class="line">&#125;</div><div class="line">hexo.extend.filter.register(<span class="string">'before_post_render'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">  data.content = data.content.replace(rEscapeContent, <span class="function"><span class="keyword">function</span>(<span class="params">match, content</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> escapeContent(content);</div><div class="line">  &#125;);</div><div class="line">  <span class="keyword">return</span> data;</div><div class="line">&#125;);</div><div class="line">hexo.extend.filter.register(<span class="string">'after_post_render'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">  data.content = data.content.replace(rPlaceholder, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> cache[<span class="built_in">arguments</span>[<span class="number">1</span>]];</div><div class="line">  &#125;);</div><div class="line">  <span class="keyword">return</span> data;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>在 themes/cactus/scripts 下添加文件fold.js，代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* global hexo */</span></div><div class="line"><span class="comment">// Usage: &#123;% fold ???? %&#125; Something &#123;% endfold %&#125;</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fold</span> (<span class="params">args, content</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> text = args[<span class="number">0</span>];</div><div class="line">    <span class="keyword">if</span>(!text) text = <span class="string">"点击显/隐"</span>;</div><div class="line">    <span class="keyword">return</span> <span class="string">'&lt;div&gt;&lt;div class="fold_hider"&gt;&lt;div class="close hider_title"&gt;'</span> + text + <span class="string">'&lt;/div&gt;&lt;/div&gt;&lt;div class="fold"&gt;\n'</span> + hexo.render.renderSync(&#123;text: content, engine: <span class="string">'markdown'</span>&#125;) + <span class="string">'\n&lt;/div&gt;&lt;/div&gt;'</span>;</div><div class="line">&#125;</div><div class="line">hexo.extend.tag.register(<span class="string">'fold'</span>, fold, &#123;ends: <span class="literal">true</span>&#125;);</div></pre></td></tr></table></figure>
-<p>　　  　　  </p>
-<h2 id="修改样式"><a href="#修改样式" class="headerlink" title="修改样式"></a>修改样式</h2><p>在 themes/cactus/source/css/style.styl 中添加代码：</p>
+<h1 id="修改样式"><a href="#修改样式" class="headerlink" title="修改样式"></a>修改样式</h1><p>在 themes/cactus/source/css/style.styl 中添加代码：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.hider_title</span>&#123;</div><div class="line">    <span class="attribute">font-family</span>: <span class="string">"Microsoft Yahei"</span>;</div><div class="line">    <span class="attribute">cursor</span>: pointer;</div><div class="line">	<span class="attribute">color</span>: <span class="number">#708090</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.close</span><span class="selector-pseudo">:after</span>&#123;</div><div class="line">    <span class="attribute">content</span>: <span class="string">"▼"</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.open</span><span class="selector-pseudo">:after</span>&#123;</div><div class="line">    <span class="attribute">content</span>: <span class="string">"▲"</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="部署使用"><a href="#部署使用" class="headerlink" title="部署使用"></a>部署使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><div><div class="fold_hider"><div class="close hider_title">「查看代码」</div></div><div class="fold">
+<h1 id="部署使用"><a href="#部署使用" class="headerlink" title="部署使用"></a>部署使用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><div><div class="fold_hider"><div class="close hider_title">「查看代码」</div></div><div class="fold">
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% fold 「查看代码」 %&#125;</div><div class="line"><span class="comment">/* source */</span></div><div class="line">&#123;% endfold %&#125;</div></pre></td></tr></table></figure>
 
 </div></div>
-<p>　　  </p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.rmiao.top/hexo-fold-block/" target="_blank" rel="external">https://blog.rmiao.top/hexo-fold-block/</a></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://blog.rmiao.top/hexo-fold-block/" target="_blank" rel="external">https://blog.rmiao.top/hexo-fold-block/</a></p>
 ]]></content>
     
     <summary type="html">
@@ -381,9 +371,9 @@ f[i][j]=max(f[i-1][x]+value[x+1, j])</script><p>　　显然，如果用暴力�
     
       <category term="CF" scheme="http://thea-r.github.io/tags/CF/"/>
     
-      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
-    
       <category term="线段树" scheme="http://thea-r.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
     
   </entry>
   
@@ -422,9 +412,9 @@ c[i]=sprintf(buf, "\%d", i);</script><p><br></p>
     
       <category term="CF" scheme="http://thea-r.github.io/tags/CF/"/>
     
-      <category term="KMP" scheme="http://thea-r.github.io/tags/KMP/"/>
-    
       <category term="DP" scheme="http://thea-r.github.io/tags/DP/"/>
+    
+      <category term="KMP" scheme="http://thea-r.github.io/tags/KMP/"/>
     
   </entry>
   

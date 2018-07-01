@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://thea-r.github.io/2018/07/01/如何在Hexo中渲染公式/index.html">
 <meta property="og:site_name" content="然而，然而">
 <meta property="og:description" content="​    优化公式渲染，本文基于Cactus主题修改。">
-<meta property="og:updated_time" content="2018-07-01T11:08:13.000Z">
+<meta property="og:updated_time" content="2018-07-01T11:16:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在Hexo中渲染公式">
 <meta name="twitter:description" content="​    优化公式渲染，本文基于Cactus主题修改。">
@@ -95,7 +95,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Kramed-和-Mathjax"><span class="toc-number">1.</span> <span class="toc-text">安装 Kramed 和 Mathjax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新-Mathjax-链接"><span class="toc-number">2.</span> <span class="toc-text">更新 Mathjax 链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新转义规则"><span class="toc-number">3.</span> <span class="toc-text">更新转义规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开启-Mathjax"><span class="toc-number">4.</span> <span class="toc-text">开启 Mathjax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署使用"><span class="toc-number">5.</span> <span class="toc-text">部署使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">6.</span> <span class="toc-text">参考</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-Kramed-和-Mathjax"><span class="toc-number">1.</span> <span class="toc-text">安装 Kramed 和 Mathjax</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#更新-Mathjax-链接"><span class="toc-number">2.</span> <span class="toc-text">更新 Mathjax 链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#更新转义规则"><span class="toc-number">3.</span> <span class="toc-text">更新转义规则</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开启-Mathjax"><span class="toc-number">4.</span> <span class="toc-text">开启 Mathjax</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#部署使用"><span class="toc-number">5.</span> <span class="toc-text">部署使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考"><span class="toc-number">6.</span> <span class="toc-text">参考</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -138,25 +138,20 @@
 <a id="more"></a>  
 <p>　　  </p>
 <hr>
-<p>　　  常用的Markdown编辑器都会集成 Mathjax ，用来渲染文档中的类Latex格式书写的数学公式。而Hexo默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签，比如在markdown语法中，下划线’_’代表斜体，会被渲染引擎处理为<em>标签。类似的语义冲突的符号还包括’*’, ‘{‘, ‘}’, ‘\’等。</em></p>
+<p>　　  常用的Markdown编辑器都会集成 Mathjax ，用来渲染文档中的类Latex格式书写的数学公式。而Hexo默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签，比如在markdown语法中，下划线$_$代表斜体，会被渲染引擎处理为$<em>$标签。类似的语义冲突的符号还包括$*, \{, \}, \\$等。</em></p>
 <p>　　  解决：更换Hexo的markdown渲染引擎， hexo-renderer-kramed 引擎是在默认的渲染引擎 hexo-renderer-marked 的基础上修改了一些bug，两者比较接近，也比较轻量级。</p>
 <p>　　  </p>
-<h2 id="安装-Kramed-和-Mathjax"><a href="#安装-Kramed-和-Mathjax" class="headerlink" title="安装 Kramed 和 Mathjax"></a>安装 Kramed 和 Mathjax</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-renderer-marked --save</div><div class="line">npm install hexo-renderer-kramed --save</div><div class="line"></div><div class="line">npm uninstall hexo-math --save</div><div class="line">npm install hexo-renderer-mathjax --save</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="更新-Mathjax-链接"><a href="#更新-Mathjax-链接" class="headerlink" title="更新 Mathjax 链接"></a>更新 Mathjax 链接</h2><p>在 node_modules/hexo-renderer-mathjax/mathjax.html 中修改代码：</p>
+<h1 id="安装-Kramed-和-Mathjax"><a href="#安装-Kramed-和-Mathjax" class="headerlink" title="安装 Kramed 和 Mathjax"></a>安装 Kramed 和 Mathjax</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-renderer-marked --save</div><div class="line">npm install hexo-renderer-kramed --save</div><div class="line"></div><div class="line">npm uninstall hexo-math --save</div><div class="line">npm install hexo-renderer-mathjax --save</div></pre></td></tr></table></figure>
+<h1 id="更新-Mathjax-链接"><a href="#更新-Mathjax-链接" class="headerlink" title="更新 Mathjax 链接"></a>更新 Mathjax 链接</h1><p>在 node_modules/hexo-renderer-mathjax/mathjax.html 中修改代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--</div><div class="line">&lt;script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;</div><div class="line">--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="更新转义规则"><a href="#更新转义规则" class="headerlink" title="更新转义规则"></a>更新转义规则</h2><p>在 node_modules/kramed/lib/rules/inline.js 中修改代码：</p>
+<h1 id="更新转义规则"><a href="#更新转义规则" class="headerlink" title="更新转义规则"></a>更新转义规则</h1><p>在 node_modules/kramed/lib/rules/inline.js 中修改代码：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span></div><div class="line"><span class="built_in">escape</span>: <span class="regexp">/^\\([`*\[\]()# +\-.!_&gt;])/</span>,</div><div class="line"></div><div class="line"><span class="comment">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span></div><div class="line">em: <span class="regexp">/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span>,</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="开启-Mathjax"><a href="#开启-Mathjax" class="headerlink" title="开启 Mathjax"></a>开启 Mathjax</h2><p>在 _config.yml 中添加代码：</p>
+<h1 id="开启-Mathjax"><a href="#开启-Mathjax" class="headerlink" title="开启 Mathjax"></a>开启 Mathjax</h1><p>在 _config.yml 中添加代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mathjax:</div><div class="line">  enable: true</div></pre></td></tr></table></figure>
 <p>在文章中选择性开启 Mathjax：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 如何在Hexo中渲染公式</div><div class="line">date: 2018-07-01 18:47:36</div><div class="line">categories: 环境搭建</div><div class="line">tags: </div><div class="line"> - Doc</div><div class="line">mathjax: true</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="部署使用"><a href="#部署使用" class="headerlink" title="部署使用"></a>部署使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-<p>　　  </p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/u014630987/article/details/78670258" target="_blank" rel="external">https://blog.csdn.net/u014630987/article/details/78670258</a></p>
+<h1 id="部署使用"><a href="#部署使用" class="headerlink" title="部署使用"></a>部署使用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://blog.csdn.net/u014630987/article/details/78670258" target="_blank" rel="external">https://blog.csdn.net/u014630987/article/details/78670258</a></p>
 <p><a href="https://www.jianshu.com/p/7ab21c7f0674" target="_blank" rel="external">https://www.jianshu.com/p/7ab21c7f0674</a></p>
 
   </div>
@@ -184,7 +179,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Kramed-和-Mathjax"><span class="toc-number">1.</span> <span class="toc-text">安装 Kramed 和 Mathjax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新-Mathjax-链接"><span class="toc-number">2.</span> <span class="toc-text">更新 Mathjax 链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新转义规则"><span class="toc-number">3.</span> <span class="toc-text">更新转义规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开启-Mathjax"><span class="toc-number">4.</span> <span class="toc-text">开启 Mathjax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署使用"><span class="toc-number">5.</span> <span class="toc-text">部署使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">6.</span> <span class="toc-text">参考</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-Kramed-和-Mathjax"><span class="toc-number">1.</span> <span class="toc-text">安装 Kramed 和 Mathjax</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#更新-Mathjax-链接"><span class="toc-number">2.</span> <span class="toc-text">更新 Mathjax 链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#更新转义规则"><span class="toc-number">3.</span> <span class="toc-text">更新转义规则</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开启-Mathjax"><span class="toc-number">4.</span> <span class="toc-text">开启 Mathjax</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#部署使用"><span class="toc-number">5.</span> <span class="toc-text">部署使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考"><span class="toc-number">6.</span> <span class="toc-text">参考</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
