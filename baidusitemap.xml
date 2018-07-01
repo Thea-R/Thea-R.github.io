@@ -4,6 +4,66 @@
 
     
   <url>
+    <loc>http://thea-r.github.io/2018/07/01/%E5%A6%82%E4%BD%95%E5%9C%A8Hexo%E4%B8%AD%E6%8A%98%E5%8F%A0%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2018-07-01T11:08:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何在Hexo中折叠代码</title>
+        <pubTime>2018-07-01T10:23:42.000Z</pubTime>
+        
+        <tag>Doc</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境搭建" url="http://thea-r.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2018/07/01/%E5%A6%82%E4%BD%95%E5%9C%A8Hexo%E4%B8%AD%E6%B8%B2%E6%9F%93%E5%85%AC%E5%BC%8F/</loc>
+    <lastmod>2018-07-01T11:08:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何在Hexo中渲染公式</title>
+        <pubTime>2018-07-01T10:47:36.000Z</pubTime>
+        
+        <tag>Doc</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境搭建" url="http://thea-r.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2018/06/30/2018%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2018-07-01T11:07:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>2018暑假集训记录（一）</title>
+        <pubTime>2018-06-30T08:44:14.000Z</pubTime>
+        
+        <tag>record</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://thea-r.github.io/2016/10/21/POJ1486-Sorting-Slides/</loc>
     <lastmod>2018-07-01T09:54:27.000Z</lastmod>
     <data>
@@ -455,26 +515,6 @@
            
              
               <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2018/06/30/2018%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2018-07-01T09:53:07.000Z</lastmod>
-    <data>
-        <display>
-        <title>2018暑假集训记录（一）</title>
-        <pubTime>2018-06-30T08:44:14.000Z</pubTime>
-        
-        <tag>record</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
           
         </display>
     </data>
