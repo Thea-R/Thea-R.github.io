@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/index.html">
 <meta property="og:site_name" content="然而，然而">
 <meta property="og:description" content="题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。 - 原题链接">
-<meta property="og:updated_time" content="2017-08-08T02:51:46.000Z">
+<meta property="og:updated_time" content="2018-07-01T09:53:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CF833B The Bakery">
 <meta name="twitter:description" content="题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。 - 原题链接">
@@ -139,7 +139,9 @@
     <script src="/assets/js/DPlayer.min.js"> </script><p>　　题意：把n个数分成k个区间，每个区间的价值为区间内不同数字的个数，问价值和最大为多少。<a href="http://codeforces.com/problemset/problem/833/B" target="_blank" rel="external"> - 原题链接</a>   </p>
 <a id="more"></a>  
 <p>　　神奇的线段树… 先碰到多校那场dirt ratio再来做的这道DP，原来这已经是个常（不）规（会）套路了😕。  </p>
-<p>　　首先，我们用f[i][j]表示前j个数分成i个区间的最大价值和，则有转移方程：<br>$$<br>f[i][j]=max(f[i-1][x]+value[x+1, j])<br>$$<br>　　显然，如果用暴力方法转移，复杂度为O(kn^2)，所以这里我们利用线段树来维护value。  </p>
+<p>　　首先，我们用f[i][j]表示前j个数分成i个区间的最大价值和，则有转移方程：  </p>
+<script type="math/tex; mode=display">
+f[i][j]=max(f[i-1][x]+value[x+1, j])</script><p>　　显然，如果用暴力方法转移，复杂度为O(kn^2)，所以这里我们利用线段树来维护value。  </p>
 <p>　　用辅助数组pos[a[j]]表示a[j]最后一次出现的位置，pre[j]表示a[j]上一次出现位置的下一位。在前i-1个区间已经求出的情况下，我们考虑第i层，假设当前枚举到a[j]，如果从pre[j]到j这段区间任选一个起点x，则[x, j]这段区间都只会有一个a[j]。我们用数组p[y]表示以p[y]为左端点的区间的不同数的个数，那么a[j]的贡献就是令p[pre[j]~j]区间整体+1。若将数组p[y]初始为f[i-1][y-1]，则p[y]最终表示的就是f[i-1][y-1]+value[y, j]，转移时只需要查询p[1~j]的最大值，复杂度优化到O(nklogn)。  </p>
 <p><br></p>
 <hr>

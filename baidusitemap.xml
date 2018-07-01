@@ -4,38 +4,16 @@
 
     
   <url>
-    <loc>http://thea-r.github.io/2018/06/30/2018%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2018-07-01T09:40:58.000Z</lastmod>
+    <loc>http://thea-r.github.io/2016/10/21/POJ1486-Sorting-Slides/</loc>
+    <lastmod>2018-07-01T09:54:27.000Z</lastmod>
     <data>
         <display>
-        <title>2018暑假集训记录（一）</title>
-        <pubTime>2018-06-30T08:44:14.000Z</pubTime>
+        <title>POJ1486 Sorting Slides</title>
+        <pubTime>2016-10-21T13:23:45.000Z</pubTime>
         
-        <tag>record</tag>
+        <tag>POJ</tag>
          
-         
-           
-             
-              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/08/09/HDU6086-Rikka-with-String/</loc>
-    <lastmod>2017-08-09T02:01:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU6086 Rikka with String</title>
-        <pubTime>2017-08-09T01:58:52.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>AC自动机</tag>
-         
-        <tag>2017多校</tag>
+        <tag>二分匹配</tag>
          
          
            
@@ -48,277 +26,18 @@
 
     
   <url>
-    <loc>http://thea-r.github.io/2017/08/08/HDU4796-Winter-s-Coming/</loc>
-    <lastmod>2017-08-09T01:57:42.000Z</lastmod>
+    <loc>http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/</loc>
+    <lastmod>2018-07-01T09:54:23.000Z</lastmod>
     <data>
         <display>
-        <title>HDU4796 Winter's Coming</title>
-        <pubTime>2017-08-08T11:55:46.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>2013长沙</tag>
-         
-        <tag>插头DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/08/08/HDU4427-Math-Magic/</loc>
-    <lastmod>2017-08-09T01:56:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU4427 Math Magic</title>
-        <pubTime>2017-08-08T11:58:36.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>2012长春</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/08/08/HDU4057-Rescue-the-Rabbit/</loc>
-    <lastmod>2017-08-09T01:55:23.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU4057 Rescue the Rabbit</title>
-        <pubTime>2017-08-08T12:00:47.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>2011大连</tag>
-         
-        <tag>AC自动机</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/08/08/HDU3709-Balanced-Number/</loc>
-    <lastmod>2017-08-09T01:52:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU3709 Balanced Number</title>
-        <pubTime>2017-08-08T12:00:33.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>2010成都</tag>
-         
-        <tag>数位DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/06/24/HDU4688-Cut-the-Cake/</loc>
-    <lastmod>2017-08-08T15:20:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU4688 Cut the Cake</title>
-        <pubTime>2017-06-24T13:07:08.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>2013多校</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>计算几何</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/</loc>
-    <lastmod>2017-08-08T02:51:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>CF833B The Bakery</title>
-        <pubTime>2017-08-08T01:59:55.000Z</pubTime>
-        
-        <tag>CF</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>线段树</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/08/08/CF825F-String-Compression/</loc>
-    <lastmod>2017-08-08T02:13:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>CF825F String Compression</title>
-        <pubTime>2017-08-08T01:59:32.000Z</pubTime>
-        
-        <tag>CF</tag>
-         
-        <tag>KMP</tag>
-         
-        <tag>DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/08/08/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
-    <lastmod>2017-08-08T01:54:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>2017暑假集训记录（二）</title>
-        <pubTime>2017-08-08T01:53:33.000Z</pubTime>
-        
-        <tag>record</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2017-08-08T01:53:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>2017暑假集训记录（一）</title>
-        <pubTime>2017-06-25T11:05:33.000Z</pubTime>
-        
-        <tag>record</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/06/25/HDU6024-Innumerable-Ancestors/</loc>
-    <lastmod>2017-06-25T13:35:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU6024 Innumerable Ancestors</title>
-        <pubTime>2017-06-25T13:24:20.000Z</pubTime>
-        
-        <tag>HDU</tag>
-         
-        <tag>2017女生赛</tag>
-         
-        <tag>LCA</tag>
-         
-        <tag>二分</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://thea-r.github.io/2017/06/24/HDU4689-Derangement/</loc>
-    <lastmod>2017-06-24T13:06:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU4689 Derangement</title>
-        <pubTime>2017-06-24T08:50:10.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>2013多校</tag>
-         
-        <tag>HDU</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2016/08/19/HDU5860-Death-Sequence/</loc>
-    <lastmod>2017-06-24T09:41:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU5860 Death Sequence</title>
-        <pubTime>2016-08-19T06:17:11.000Z</pubTime>
+        <title>HDU5862 Counting Intersections</title>
+        <pubTime>2016-08-19T08:04:17.000Z</pubTime>
         
         <tag>HDU</tag>
          
         <tag>2016多校</tag>
          
-        <tag>递推</tag>
+        <tag>树状数组</tag>
          
          
            
@@ -331,18 +50,18 @@
 
     
   <url>
-    <loc>http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/</loc>
-    <lastmod>2017-06-24T09:40:58.000Z</lastmod>
+    <loc>http://thea-r.github.io/2016/08/20/HDU5835-Danganronpa/</loc>
+    <lastmod>2018-07-01T09:54:20.000Z</lastmod>
     <data>
         <display>
-        <title>HDU5828 Rikka with Sequence</title>
-        <pubTime>2016-08-13T14:46:36.000Z</pubTime>
+        <title>HDU5835 Danganronpa</title>
+        <pubTime>2016-08-20T10:06:30.000Z</pubTime>
         
-        <tag>线段树</tag>
-         
         <tag>HDU</tag>
          
-        <tag>2016多校</tag>
+        <tag>2016CCPC</tag>
+         
+        <tag>杂题</tag>
          
          
            
@@ -355,18 +74,20 @@
 
     
   <url>
-    <loc>http://thea-r.github.io/2016/08/15/HDU5727-Necklace/</loc>
-    <lastmod>2017-06-24T09:40:54.000Z</lastmod>
+    <loc>http://thea-r.github.io/2016/08/16/HDU5838-Mountain/</loc>
+    <lastmod>2018-07-01T09:54:16.000Z</lastmod>
     <data>
         <display>
-        <title>HDU5727 Necklace</title>
-        <pubTime>2016-08-15T07:40:27.000Z</pubTime>
+        <title>HDU5838 Mountain</title>
+        <pubTime>2016-08-16T10:03:52.000Z</pubTime>
         
         <tag>HDU</tag>
          
-        <tag>2016多校</tag>
+        <tag>2016CCPC</tag>
          
-        <tag>搜索</tag>
+        <tag>状压DP</tag>
+         
+        <tag>容斥</tag>
          
          
            
@@ -380,7 +101,7 @@
     
   <url>
     <loc>http://thea-r.github.io/2016/08/19/HDU5861-Road/</loc>
-    <lastmod>2017-06-24T09:40:49.000Z</lastmod>
+    <lastmod>2018-07-01T09:54:11.000Z</lastmod>
     <data>
         <display>
         <title>HDU5861 Road</title>
@@ -407,20 +128,18 @@
 
     
   <url>
-    <loc>http://thea-r.github.io/2016/08/16/HDU5838-Mountain/</loc>
-    <lastmod>2017-06-24T09:40:43.000Z</lastmod>
+    <loc>http://thea-r.github.io/2016/08/15/HDU5727-Necklace/</loc>
+    <lastmod>2018-07-01T09:54:07.000Z</lastmod>
     <data>
         <display>
-        <title>HDU5838 Mountain</title>
-        <pubTime>2016-08-16T10:03:52.000Z</pubTime>
+        <title>HDU5727 Necklace</title>
+        <pubTime>2016-08-15T07:40:27.000Z</pubTime>
         
         <tag>HDU</tag>
          
-        <tag>2016CCPC</tag>
+        <tag>2016多校</tag>
          
-        <tag>状压DP</tag>
-         
-        <tag>容斥</tag>
+        <tag>搜索</tag>
          
          
            
@@ -431,6 +150,337 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://thea-r.github.io/2016/08/13/HDU5828-Rikka-with-Sequence/</loc>
+    <lastmod>2018-07-01T09:54:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU5828 Rikka with Sequence</title>
+        <pubTime>2016-08-13T14:46:36.000Z</pubTime>
+        
+        <tag>线段树</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>2016多校</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2016/08/19/HDU5860-Death-Sequence/</loc>
+    <lastmod>2018-07-01T09:54:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU5860 Death Sequence</title>
+        <pubTime>2016-08-19T06:17:11.000Z</pubTime>
+        
+        <tag>HDU</tag>
+         
+        <tag>2016多校</tag>
+         
+        <tag>递推</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/06/24/HDU4689-Derangement/</loc>
+    <lastmod>2018-07-01T09:53:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU4689 Derangement</title>
+        <pubTime>2017-06-24T08:50:10.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>2013多校</tag>
+         
+        <tag>HDU</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/06/25/HDU6024-Innumerable-Ancestors/</loc>
+    <lastmod>2018-07-01T09:53:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU6024 Innumerable Ancestors</title>
+        <pubTime>2017-06-25T13:24:20.000Z</pubTime>
+        
+        <tag>HDU</tag>
+         
+        <tag>2017女生赛</tag>
+         
+        <tag>LCA</tag>
+         
+        <tag>二分</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/06/25/2017%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2018-07-01T09:53:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>2017暑假集训记录（一）</title>
+        <pubTime>2017-06-25T11:05:33.000Z</pubTime>
+        
+        <tag>record</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/08/08/CF825F-String-Compression/</loc>
+    <lastmod>2018-07-01T09:53:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>CF825F String Compression</title>
+        <pubTime>2017-08-08T01:59:32.000Z</pubTime>
+        
+        <tag>CF</tag>
+         
+        <tag>KMP</tag>
+         
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/08/08/CF833B-The-Bakery/</loc>
+    <lastmod>2018-07-01T09:53:40.000Z</lastmod>
+    <data>
+        <display>
+        <title>CF833B The Bakery</title>
+        <pubTime>2017-08-08T01:59:55.000Z</pubTime>
+        
+        <tag>CF</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>线段树</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/06/24/HDU4688-Cut-the-Cake/</loc>
+    <lastmod>2018-07-01T09:53:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU4688 Cut the Cake</title>
+        <pubTime>2017-06-24T13:07:08.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>2013多校</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>计算几何</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/08/08/HDU3709-Balanced-Number/</loc>
+    <lastmod>2018-07-01T09:53:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU3709 Balanced Number</title>
+        <pubTime>2017-08-08T12:00:33.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>2010成都</tag>
+         
+        <tag>数位DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/08/08/HDU4057-Rescue-the-Rabbit/</loc>
+    <lastmod>2018-07-01T09:53:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU4057 Rescue the Rabbit</title>
+        <pubTime>2017-08-08T12:00:47.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>2011大连</tag>
+         
+        <tag>AC自动机</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/08/08/HDU4427-Math-Magic/</loc>
+    <lastmod>2018-07-01T09:53:22.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU4427 Math Magic</title>
+        <pubTime>2017-08-08T11:58:36.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>2012长春</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/08/08/HDU4796-Winter-s-Coming/</loc>
+    <lastmod>2018-07-01T09:53:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU4796 Winter's Coming</title>
+        <pubTime>2017-08-08T11:55:46.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>2013长沙</tag>
+         
+        <tag>插头DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2017/08/09/HDU6086-Rikka-with-String/</loc>
+    <lastmod>2018-07-01T09:53:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>HDU6086 Rikka with String</title>
+        <pubTime>2017-08-09T01:58:52.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>AC自动机</tag>
+         
+        <tag>2017多校</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://thea-r.github.io/2018/06/30/2018%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2018-07-01T09:53:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>2018暑假集训记录（一）</title>
+        <pubTime>2018-06-30T08:44:14.000Z</pubTime>
+        
+        <tag>record</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM训练记录" url="http://thea-r.github.io/categories/ACM%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://thea-r.github.io/2016/08/13/Hello-World/</loc>
@@ -446,76 +496,6 @@
            
              
               <breadCrumb title="fragment" url="http://thea-r.github.io/categories/fragment/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2016/08/20/HDU5835-Danganronpa/</loc>
-    <lastmod>2017-06-24T09:40:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU5835 Danganronpa</title>
-        <pubTime>2016-08-20T10:06:30.000Z</pubTime>
-        
-        <tag>HDU</tag>
-         
-        <tag>2016CCPC</tag>
-         
-        <tag>杂题</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2016/08/19/HDU5862-Counting-Intersections/</loc>
-    <lastmod>2017-06-24T09:40:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU5862 Counting Intersections</title>
-        <pubTime>2016-08-19T08:04:17.000Z</pubTime>
-        
-        <tag>HDU</tag>
-         
-        <tag>2016多校</tag>
-         
-        <tag>树状数组</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://thea-r.github.io/2016/10/21/POJ1486-Sorting-Slides/</loc>
-    <lastmod>2017-06-24T09:39:52.000Z</lastmod>
-    <data>
-        <display>
-        <title>POJ1486 Sorting Slides</title>
-        <pubTime>2016-10-21T13:23:45.000Z</pubTime>
-        
-        <tag>POJ</tag>
-         
-        <tag>二分匹配</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM题解" url="http://thea-r.github.io/categories/ACM%E9%A2%98%E8%A7%A3/"/>
           
         </display>
     </data>
