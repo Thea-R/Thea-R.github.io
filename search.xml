@@ -10,9 +10,9 @@
 <a id="more"></a>  
 <p>　　  </p>
 <hr>
-<p>　　  常用的Markdown编辑器都会集成 Mathjax ，用来渲染文档中的类Latex格式书写的数学公式。而Hexo默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签，比如在markdown语法中，下划线$_$代表斜体，会被渲染引擎处理为$<em>$标签。类似的语义冲突的符号还包括$*, \{, \}, \\$等。</em></p>
-<p>　　  解决：更换Hexo的markdown渲染引擎， hexo-renderer-kramed 引擎是在默认的渲染引擎 hexo-renderer-marked 的基础上修改了一些bug，两者比较接近，也比较轻量级。</p>
 <p>　　  </p>
+<p>　　  常用的Markdown编辑器都会集成 Mathjax ，用来渲染文档中的类Latex格式书写的数学公式。而Hexo默认使用 hexo-renderer-marked 引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签。</p>
+<p>　　  解决：更换Hexo的markdown渲染引擎， hexo-renderer-kramed 引擎是在默认的渲染引擎 hexo-renderer-marked 的基础上修改了一些bug，两者比较接近，也比较轻量级。</p>
 <h1 id="安装-Kramed-和-Mathjax"><a href="#安装-Kramed-和-Mathjax" class="headerlink" title="安装 Kramed 和 Mathjax"></a>安装 Kramed 和 Mathjax</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-renderer-marked --save</div><div class="line">npm install hexo-renderer-kramed --save</div><div class="line"></div><div class="line">npm uninstall hexo-math --save</div><div class="line">npm install hexo-renderer-mathjax --save</div></pre></td></tr></table></figure>
 <h1 id="更新-Mathjax-链接"><a href="#更新-Mathjax-链接" class="headerlink" title="更新 Mathjax 链接"></a>更新 Mathjax 链接</h1><p>在 node_modules/hexo-renderer-mathjax/mathjax.html 中修改代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--</div><div class="line">&lt;script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;</div><div class="line">--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
