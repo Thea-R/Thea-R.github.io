@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://thea-r.github.io/2018/06/30/2018%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2018-07-02T07:39:38.000Z</lastmod>
+    <lastmod>2018-07-03T05:25:24.000Z</lastmod>
     <data>
         <display>
         <title>2018暑假集训记录（一）</title>
@@ -337,11 +337,11 @@
         <title>CF825F String Compression</title>
         <pubTime>2017-08-08T01:59:32.000Z</pubTime>
         
+        <tag>DP</tag>
+         
         <tag>CF</tag>
          
         <tag>KMP</tag>
-         
-        <tag>DP</tag>
          
          
            
@@ -361,9 +361,9 @@
         <title>CF833B The Bakery</title>
         <pubTime>2017-08-08T01:59:55.000Z</pubTime>
         
-        <tag>CF</tag>
-         
         <tag>DP</tag>
+         
+        <tag>CF</tag>
          
         <tag>线段树</tag>
          
@@ -411,11 +411,11 @@
         <title>HDU3709 Balanced Number</title>
         <pubTime>2017-08-08T12:00:33.000Z</pubTime>
         
-        <tag>DP</tag>
-         
         <tag>2010成都</tag>
          
         <tag>数位DP</tag>
+         
+        <tag>DP</tag>
          
          
            
